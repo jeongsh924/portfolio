@@ -4,27 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/common.css?v0">
+    <link rel="stylesheet" href="/css/style.css?v0">
 </head>
 <body>
-    <header class="header">
-        <div class="icon" aria-label="로고"></div>
-        <ul class="fake_menu" aria-label="페이크 메뉴">
-            <li><p>File</p></li>
-            <li><p>Edit</p></li>
-            <li><p>Selection</p></li>
-            <li><p>View</p></li>
-            <li><p>Go</p></li>
-            <li><p>Run</p></li>
-            <li><p>Terminal</p></li>
-            <li><p>Help</p></li>
-        </ul>
-        <div class="title">portfolio</div>
-        <ul class="right_button" aria-label="우측 버튼">
-            <li><i></i></li>
-            <li><i></i></li>
-            <li><i></i></li>
-        </ul>
-    </header>
+    <div id="header"></div>
+
     <main class="main">
         <aside class="icon_menu" aria-label="아이콘 메뉴">
             <nav>
@@ -62,21 +47,17 @@
 
         </article>
     </main>
-    <footer class="footer">
-        <ul class="left_icon">
-            <li><i></i></li>
-            <li><i></i><span>main</span></li>
-            <li>
-                <p><i></i><span>0</span></p>
-                <p><i></i><span>0</span></p>
-            </li>
-        </ul>
-        <ul class="right_icon">
-            <li><span>UTF-8</span></li>
-            <li><span>CRLF</span></li>
-            <li><i></i><span>HTML</span></li>
-            <li><i></i></li>
-        </ul>
-    </footer>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
 </html>
