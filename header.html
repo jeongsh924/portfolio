@@ -1,5 +1,9 @@
     <header class="header">
-        <div class="logo" aria-label="로고"></div>
+        <div class="logo" aria-label="로고">
+            <svg class="icon icon--vscode" role="img" aria-labelledby="icon-vscode-title">
+                <use href="assets/icons.svg#icon-vscode"></use>
+            </svg>
+        </div>
         <ul class="menu-bar">
             <li class="menu-bar__item"><a href="#" class="menu-bar__link">File</a></li>
             <li class="menu-bar__item"><a href="#" class="menu-bar__link">Edit</a></li>
@@ -12,8 +16,20 @@
         </ul>
         <h1 class="title">portfolio</h1>
         <div class="window-controls">
-            <button class="window-controls__btn window-controls__btn--minimize" aria-label="최소화"></button>
-            <button class="window-controls__btn window-controls__btn--maximize" aria-label="최대화"></button>
-            <button class="window-controls__btn window-controls__btn--close" aria-label="닫기"></button>
+            <button class="window-controls__btn window-controls__btn--minimize" aria-label="최소화">
+                <svg class="icon icon--chrome" aria-hidden="true">
+                    <use href="assets/icons.svg#icon-chrome-minimize"></use>
+                </svg>
+            </button>
+            <button class="window-controls__btn window-controls__btn--restore" aria-label="복원">
+                <svg class="icon icon--chrome" aria-hidden="true">
+                    <use href="assets/icons.svg#icon-chrome-restore"></use>
+                </svg>
+            </button>
+            <button class="window-controls__btn window-controls__btn--close" aria-label="닫기">
+                <svg class="icon icon--chrome" aria-hidden="true">
+                    <use href="assets/icons.svg#icon-chrome-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
