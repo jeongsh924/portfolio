@@ -1,6 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-@import url("SegoeUI.css");
-@import url("Consolas.css");
 [data-theme=dark] {
   --header-bg-color: oklch(0.3175 0.0018 286.3);
   --menu-bar-color: oklch(0.6467 0 0);
@@ -55,8 +52,8 @@ a {
 .header .menu-bar__link {
   display: flex;
   color: var(--menu-bar-color);
-  padding: 3px 8px;
-  border-radius: 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
   background-color: var(--menu-bar-bg);
   cursor: default;
   letter-spacing: -0.5px;
