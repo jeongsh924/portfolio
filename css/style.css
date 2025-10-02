@@ -26,18 +26,26 @@ a {
   height: 35px;
   background-color: var(--header-bg-color);
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header .logo {
   width: 16px;
-  margin-left: 10px;
+  height: 100%;
+  margin: 0 10px;
 }
 .header .logo .icon--vscode {
   width: 100%;
   height: 100%;
 }
+.header .title {
+  color: oklch(1 0 0);
+  font-size: 16px;
+  margin: 0 auto;
+}
 .header .menu-bar {
   display: inline-flex;
+  height: 100%;
 }
 .header .menu-bar__item {
   display: inline-flex;
@@ -45,10 +53,13 @@ a {
 .header .menu-bar__link {
   display: flex;
   color: var(--menu-bar-color);
-  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background-color: var(--menu-bar-color-hover);
 }
 .header .window-controls {
   display: flex;
+  height: 100%;
 }
 .header .window-controls__btn {
   border: none;
@@ -59,8 +70,8 @@ a {
   transition: all 0.2s;
 }
 .header .window-controls__btn .icon {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 100%;
   color: var(--window-controls-color);
   transition: all 0.2s;
 }

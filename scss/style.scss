@@ -1,3 +1,4 @@
+@use "palette" as palette;
 @use 'tokens.dark' as dark;
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
@@ -33,7 +34,6 @@ a {
     justify-content: center;
     align-items: center;
 
-    
     .logo {
         width: 16px;
         height: 100%;
@@ -46,7 +46,7 @@ a {
     }
 
     .title {
-        color: $white;
+        color: palette.$white;
         font-size: 16px;
         margin: 0 auto;
     }
@@ -69,6 +69,7 @@ a {
 
     .window-controls {
         display: flex;
+        height: 100%;
 
         &__btn {
             border: none;
