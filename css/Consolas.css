@@ -2,14 +2,14 @@
     font-family: 'Consolas';
     font-style: normal;
     font-weight: 400;
-    src: url('../assets/fonts/Consolas W99 Regular.woff2') format('woff2'),
-         url('../assets/fonts/Consolas W99 Regular.woff') format('woff');
+    src: url('../assets/fonts/Consolas.woff2') format('woff2'),
+         url('../assets/fonts/Consolas.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Consolas';
     font-style: italic;
     font-weight: 400;
-    src: url('../assets/fonts/Consolas W99 Italic.woff2') format('woff2'),
-         url('../assets/fonts/Consolas W99 Italic.woff') format('woff');
+    src: url('../assets/fonts/Consolas-Italic.woff2') format('woff2'),
+         url('../assets/fonts/Consolas-Italic.woff') format('woff');
 }

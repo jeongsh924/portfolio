@@ -2,12 +2,12 @@
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
-    src: local('Segoe UI Regular'), url('../assets/fonts/Segoe UI.woff') format('woff');
+    src: local('Segoe UI Regular'), url('../assets/fonts/SegoeUI.woff') format('woff');
 }
     
 @font-face {
     font-family: 'Segoe UI';
     font-style: italic;
     font-weight: 400;
-    src: local('Segoe UI Italic'), url('../assets/fonts/Segoe UI Italic.woff') format('woff');
+    src: local('Segoe UI Italic'), url('../assets/fonts/SegoeUI-Italic.woff') format('woff');
 }

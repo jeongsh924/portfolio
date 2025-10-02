@@ -55,7 +55,6 @@ a {
 
     .menu-bar {
         display: inline-flex;
-        height: 100%;
 
         &__item {
             display: inline-flex;
@@ -64,7 +63,7 @@ a {
             display: flex;
             color: var(--menu-bar-color);
             padding: 3px 5px;
-            border-radius: 3px;
+            border-radius: 5px;
             background-color: var(--menu-bar-color-hover);
         }
     }
