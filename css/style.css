@@ -47,6 +47,7 @@ a {
 }
 .header .menu-bar {
   display: inline-flex;
+  margin-right: auto;
 }
 .header .menu-bar__item {
   display: inline-flex;

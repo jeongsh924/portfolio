@@ -1,9 +1,9 @@
 [data-theme=dark] {
-  --header-bg-color: oklch(0.3175 0.0018 286.3);
-  --menu-bar-color: oklch(0.6467 0 0);
+  --header-bg-color: oklch(0.3562 0 0);
+  --menu-bar-color: oklch(0.8328 0 0);
   --menu-bar-color-hover: oklch(0.8452 0 0);
   --menu-bar-bg: transparent;
-  --menu-bar-bg-hover: oklch(0.3705 0.0014 197.1);
+  --menu-bar-bg-hover: oklch(0.3932 0.0013 197.1);
   --window-controls-color: oklch(0.8452 0 0);
   --window-controls-color-hover: oklch(0.4532 0 0);
   --window-controls-close-color-hover: oklch(1 0 0);
@@ -47,6 +47,7 @@ a {
 }
 .header .menu-bar {
   display: inline-flex;
+  margin-right: auto;
 }
 .header .menu-bar__item {
   display: inline-flex;
