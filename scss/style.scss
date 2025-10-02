@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'SegoeUI', 'Pretendard', sans-serif;
+    font-family: 'Segoe UI', 'Pretendard', sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
@@ -64,7 +64,13 @@ a {
             color: var(--menu-bar-color);
             padding: 3px 5px;
             border-radius: 5px;
-            background-color: var(--menu-bar-color-hover);
+            background-color: var(--menu-bar-bg);
+            cursor: default;
+
+            &:hover {
+                color: var(--menu-bar-color-hover);
+                background-color: var(--menu-bar-bg-hover);
+            }
         }
     }
 
