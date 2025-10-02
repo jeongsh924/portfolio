@@ -13,6 +13,10 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
   height: 35px;
@@ -21,6 +25,9 @@ body {
 }
 .header .logo {
   width: 16px;
+}
+.header .logo .icon--vscode {
+  width: 100%;
 }
 .header .menu-bar__item {
   display: inline-flex;
