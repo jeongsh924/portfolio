@@ -9,6 +9,10 @@
     --header-bg-color: #{dark.$header-bg-color};
     --menu-bar-color: #{dark.$menu-bar-color};
     --menu-bar-color-hover: #{dark.$menu-bar-color-hover};
+    --window-controls-color: #{dark.$window-controls-color};
+    --window-controls-color-hover: #{dark.$window-controls-color-hover};
+    --window-controls-close-color-hover: #{dark.$window-controls-close-color-hover};
+    --window-controls-close-bg-hover: #{dark.$window-controls-close-bg-hover};
 }
 
 body {
@@ -26,15 +30,22 @@ a {
     height: 35px;
     background-color: var(--header-bg-color);
     display: flex;
+    align-items: center;
+
     
     .logo {
         width: 16px;
+        margin-left: 10px;
+
         .icon--vscode {
             width: 100%;
+            height: 100%;
         }
     }
 
     .menu-bar {
+        display: inline-flex;
+
         &__item {
             display: inline-flex;
         }
@@ -42,6 +53,38 @@ a {
             display: flex;
             color: var(--menu-bar-color);
             cursor: pointer;
+        }
+    }
+
+    .window-controls {
+        display: flex;
+
+        &__btn {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            width: 45px;
+            height: 100%;
+            transition: all .2s;
+
+            .icon {
+                width: 10px;
+                height: 10px;
+                color: var(--window-controls-color);
+                transition: all .2s;
+            }
+
+            &:hover {
+                background-color: var(--window-controls-color-hover);
+
+                &--close {
+                    background-color: var(--window-controls-close-bg-hover);
+
+                    .icon {
+                        color: var(--window-controls-close-color-hover);
+                    }
+                }
+            }
         }
     }
 }

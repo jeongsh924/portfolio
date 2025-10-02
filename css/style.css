@@ -5,6 +5,10 @@
   --header-bg-color: oklch(0.3562 0 0);
   --menu-bar-color: oklch(0.6467 0 0);
   --menu-bar-color-hover: oklch(0.8452 0 0);
+  --window-controls-color: oklch(0.8452 0 0);
+  --window-controls-color-hover: oklch(0.4532 0 0);
+  --window-controls-close-color-hover: oklch(1 0 0);
+  --window-controls-close-bg-hover: oklch(0.5899 0.2344 26.3);
 }
 
 body {
@@ -22,12 +26,18 @@ a {
   height: 35px;
   background-color: var(--header-bg-color);
   display: flex;
+  align-items: center;
 }
 .header .logo {
   width: 16px;
+  margin-left: 10px;
 }
 .header .logo .icon--vscode {
   width: 100%;
+  height: 100%;
+}
+.header .menu-bar {
+  display: inline-flex;
 }
 .header .menu-bar__item {
   display: inline-flex;
@@ -36,4 +46,30 @@ a {
   display: flex;
   color: var(--menu-bar-color);
   cursor: pointer;
+}
+.header .window-controls {
+  display: flex;
+}
+.header .window-controls__btn {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  width: 45px;
+  height: 100%;
+  transition: all 0.2s;
+}
+.header .window-controls__btn .icon {
+  width: 10px;
+  height: 10px;
+  color: var(--window-controls-color);
+  transition: all 0.2s;
+}
+.header .window-controls__btn:hover {
+  background-color: var(--window-controls-color-hover);
+}
+.header .window-controls__btn:hover--close {
+  background-color: var(--window-controls-close-bg-hover);
+}
+.header .window-controls__btn:hover--close .icon {
+  color: var(--window-controls-close-color-hover);
 }
