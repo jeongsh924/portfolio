@@ -67,9 +67,9 @@ a {
 .header .window-controls__btn:hover {
   background-color: var(--window-controls-color-hover);
 }
-.header .window-controls__btn:hover--close {
+.header .window-controls__btn--close:hover {
   background-color: var(--window-controls-close-bg-hover);
 }
-.header .window-controls__btn:hover--close .icon {
+.header .window-controls__btn--close:hover .icon {
   color: var(--window-controls-close-color-hover);
 }

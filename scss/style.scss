@@ -30,12 +30,14 @@ a {
     height: 35px;
     background-color: var(--header-bg-color);
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     
     .logo {
         width: 16px;
-        margin-left: 10px;
+        height: 100%;
+        margin: 0 10px;
 
         .icon--vscode {
             width: 100%;
@@ -43,8 +45,15 @@ a {
         }
     }
 
+    .title {
+        color: $white;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
     .menu-bar {
         display: inline-flex;
+        height: 100%;
 
         &__item {
             display: inline-flex;
@@ -52,7 +61,9 @@ a {
         &__link {
             display: flex;
             color: var(--menu-bar-color);
-            cursor: pointer;
+            padding: 3px 5px;
+            border-radius: 3px;
+            background-color: var(--menu-bar-color-hover);
         }
     }
 
@@ -68,16 +79,18 @@ a {
             transition: all .2s;
 
             .icon {
-                width: 10px;
-                height: 10px;
+                width: 16px;
+                height: 100%;
                 color: var(--window-controls-color);
                 transition: all .2s;
             }
 
             &:hover {
                 background-color: var(--window-controls-color-hover);
+            }
 
-                &--close {
+            &--close {
+                &:hover {
                     background-color: var(--window-controls-close-bg-hover);
 
                     .icon {
