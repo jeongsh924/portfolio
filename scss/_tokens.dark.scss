@@ -1,0 +1,40 @@
+@import "palette";
+
+
+//header
+$header-bg-color: oklch(0.3562 0 0);
+
+$menu-bar-color: $gray-400;
+$menu-bar-color-hover: $gray-200;
+$menu-bar-bg: transparent;
+$menu-bar-bg-hover: oklch(0.3705 0.0014 197.1);
+
+$window-controls-color: $gray-200;
+$window-controls-color-hover: $gray-600;
+$window-controls-close-color-hover: $white;
+$window-controls-close-bg-hover: $red-500;
+
+
+//main
+$main-bg-color: oklch(0.2649 0.0018 286.27);
+
+$icon-menu-bg-color: oklch(0.3211 0 0);
+$icon-menu-color: oklch(0.6167 0 0);
+$icon-menu-color-hover: $white;
+
+$explorer-menu-bg-color: oklch(0.2649 0.0018 286.27);
+$explorer-menu-color: $gray-200;
+$explorer-menu-color-bg: transparent;
+$explorer-menu-color-bg-line: transparent;
+$explorer-menu-color-bg-hover: oklch(0.2946 0.0046 219.63);
+$explorer-menu-color-bg-active: oklch(0.334 0.0827 246.12);
+$explorer-menu-color-bg-line-active: oklch(0.5836 0.159068 248.5119);
+
+$tab-menu-color: $gray-400;
+$tab-menu-color-active: $white;
+
+
+
+$point-color: oklch(0.567 0.154556 248.5156);
+
+

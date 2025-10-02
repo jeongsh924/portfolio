@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Consolas';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Consolas W99 Regular.woff2') format('woff2'),
+         url('../fonts/Consolas W99 Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Consolas';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/Consolas W99 Italic.woff2') format('woff2'),
+         url('../fonts/Consolas W99 Italic.woff') format('woff');
+}
