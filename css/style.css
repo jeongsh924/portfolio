@@ -2,7 +2,7 @@
 @import url("SegoeUI.css");
 @import url("Consolas.css");
 [data-theme=dark] {
-  --header-bg-color: oklch(0.3562 0 0);
+  --header-bg-color: oklch(0.3175 0.0018 286.3);
   --menu-bar-color: oklch(0.6467 0 0);
   --menu-bar-color-hover: oklch(0.8452 0 0);
   --menu-bar-bg: transparent;
@@ -44,6 +44,7 @@ a {
   color: oklch(1 0 0);
   font-size: 16px;
   margin: 0 auto;
+  flex: 0.2;
 }
 .header .menu-bar {
   display: inline-flex;
@@ -54,10 +55,11 @@ a {
 .header .menu-bar__link {
   display: flex;
   color: var(--menu-bar-color);
-  padding: 3px 5px;
-  border-radius: 5px;
+  padding: 3px 8px;
+  border-radius: 8px;
   background-color: var(--menu-bar-bg);
   cursor: default;
+  letter-spacing: -0.5px;
 }
 .header .menu-bar__link:hover {
   color: var(--menu-bar-color-hover);

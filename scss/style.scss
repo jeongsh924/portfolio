@@ -51,6 +51,7 @@ a {
         color: palette.$white;
         font-size: 16px;
         margin: 0 auto;
+        flex: 0.2;
     }
 
     .menu-bar {
@@ -62,10 +63,11 @@ a {
         &__link {
             display: flex;
             color: var(--menu-bar-color);
-            padding: 3px 5px;
-            border-radius: 5px;
+            padding: 3px 8px;
+            border-radius: 8px;
             background-color: var(--menu-bar-bg);
             cursor: default;
+            letter-spacing: -0.5px;
 
             &:hover {
                 color: var(--menu-bar-color-hover);
