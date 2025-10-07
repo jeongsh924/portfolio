@@ -33,9 +33,18 @@
         top: var(--header-height);
         left: 0;
         background-color: var(--icon-menu-bg-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
+
+        nav {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            hr {
+                display: none;
+            }
+        }
 
         &__list {
             width: 100%;
