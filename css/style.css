@@ -124,6 +124,9 @@ a {
   top: var(--header-height);
   left: 0;
   background-color: var(--icon-menu-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .icon-menu__list {
   width: 100%;
@@ -149,6 +152,10 @@ a {
   z-index: 1;
   display: none;
 }
+.main .icon-menu__link:hover .icon--menu {
+  color: var(--icon-menu-color-hover);
+}
 .main .icon-menu .icon--menu {
   color: var(--icon-menu-color);
+  height: calc(var(--icon-menu-width) / 2);
 }

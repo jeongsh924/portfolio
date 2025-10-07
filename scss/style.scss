@@ -33,6 +33,9 @@
         top: var(--header-height);
         left: 0;
         background-color: var(--icon-menu-bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &__list {
             width: 100%;
@@ -60,10 +63,17 @@
                 z-index: 1;
                 display: none;
             }
+
+            &:hover {
+                .icon--menu {
+                    color: var(--icon-menu-color-hover);
+                }
+            }
         }
 
         .icon--menu {
             color: var(--icon-menu-color);
+            height: calc(var(--icon-menu-width) / 2);
         }
     }
 }
