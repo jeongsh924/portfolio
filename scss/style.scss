@@ -2,14 +2,68 @@
 @use 'tokens/tokens.dark' as dark;
 @use 'layout/header';
 
-// [data-theme="dark"] {
-//     --header-bg-color: #{dark.$header-bg-color};
-//     --menu-bar-color: #{dark.$menu-bar-color};
-//     --menu-bar-color-hover: #{dark.$menu-bar-color-hover};
-//     --menu-bar-bg: #{dark.$menu-bar-bg};
-//     --menu-bar-bg-hover: #{dark.$menu-bar-bg-hover};
-//     --window-controls-color: #{dark.$window-controls-color};
-//     --window-controls-color-hover: #{dark.$window-controls-color-hover};
-//     --window-controls-close-color-hover: #{dark.$window-controls-close-color-hover};
-//     --window-controls-close-bg-hover: #{dark.$window-controls-close-bg-hover};
-// }
+[data-theme="dark"] {
+    --main-bg-color: #{dark.$main-bg-color};
+    
+    --icon-menu-bg-color: #{dark.$icon-menu-bg-color};
+    --icon-menu-color: #{dark.$icon-menu-color};
+    --icon-menu-color-hover: #{dark.$icon-menu-color-hover};
+    
+    --explorer-menu-bg-color: #{dark.$explorer-menu-bg-color};
+    --explorer-menu-color: #{dark.$explorer-menu-color};
+    --explorer-menu-color-bg: #{dark.$explorer-menu-color-bg};
+    --explorer-menu-color-bg-line: #{dark.$explorer-menu-color-bg-line};
+    --explorer-menu-color-bg-hover: #{dark.$explorer-menu-color-bg-hover};
+    --explorer-menu-color-bg-active: #{dark.$explorer-menu-color-bg-active};
+    --explorer-menu-color-bg-line-active: #{dark.$explorer-menu-color-bg-line-active};
+    
+    --tab-menu-color: #{dark.$tab-menu-color};
+    --tab-menu-color-active: #{dark.$tab-menu-color-active};
+}
+
+:root {
+    --icon-menu-width: 48px;
+}
+
+.main {
+    .icon-menu {
+        width: var(--icon-menu-width);
+        height: calc(100% - var(--header-height));
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        background-color: var(--icon-menu-bg-color);
+
+        &__list {
+            width: 100%;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__link {
+            width: 100%;
+            height: var(--icon-menu-width);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background-color: var(--icon-menu-color-hover);
+                z-index: 1;
+                display: none;
+            }
+        }
+
+        .icon--menu {
+            color: var(--icon-menu-color);
+        }
+    }
+}
