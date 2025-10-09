@@ -52,6 +52,7 @@ a {
 .header .menu-bar {
   display: inline-flex;
   margin-right: auto;
+  font-size: 13px;
 }
 .header .menu-bar__item {
   display: inline-flex;
@@ -106,6 +107,7 @@ a {
   --explorer-menu-color: oklch(0.8452 0 0);
   --explorer-menu-color-bg: transparent;
   --explorer-menu-color-bg-line: transparent;
+  --explorer-menu-more-bg-hover: oklch(0.3358 0.0014 197.09);
   --explorer-menu-color-bg-hover: oklch(0.2946 0.0046 219.63);
   --explorer-menu-color-bg-active: oklch(0.334 0.0827 246.12);
   --explorer-menu-color-bg-line-active: oklch(0.5836 0.159068 248.5119);
@@ -115,6 +117,7 @@ a {
 
 :root {
   --icon-menu-width: 48px;
+  --explorer-menu-width: 300px;
 }
 
 .main .icon-menu {
@@ -147,6 +150,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .main .icon-menu__link::after {
   position: absolute;
@@ -161,7 +165,38 @@ a {
 .main .icon-menu__link:hover .icon--menu {
   color: var(--icon-menu-color-hover);
 }
+.main .icon-menu__link--active::after {
+  display: block;
+}
 .main .icon-menu .icon--menu {
   color: var(--icon-menu-color);
   height: calc(var(--icon-menu-width) / 2);
+}
+.main .explorer-menu {
+  width: var(--explorer-menu-width);
+  height: calc(100% - var(--header-height));
+  position: fixed;
+  top: var(--header-height);
+  left: var(--icon-menu-width);
+  background-color: var(--explorer-menu-bg-color);
+  color: var(--explorer-menu-color);
+  font-size: 11px;
+}
+.main .explorer-menu__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+.main .explorer-menu__title .icon--more {
+  color: var(--explorer-menu-color);
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  margin-right: 12px;
+  cursor: pointer;
+  background-color: var(--explorer-menu-color-bg);
+}
+.main .explorer-menu__title .icon--more:hover {
+  background-color: var(--explorer-menu-more-bg-hover);
 }

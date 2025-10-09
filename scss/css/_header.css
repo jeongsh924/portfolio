@@ -52,6 +52,7 @@ a {
 .header .menu-bar {
   display: inline-flex;
   margin-right: auto;
+  font-size: 13px;
 }
 .header .menu-bar__item {
   display: inline-flex;

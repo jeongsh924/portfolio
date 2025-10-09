@@ -13,6 +13,7 @@
     --explorer-menu-color: #{dark.$explorer-menu-color};
     --explorer-menu-color-bg: #{dark.$explorer-menu-color-bg};
     --explorer-menu-color-bg-line: #{dark.$explorer-menu-color-bg-line};
+    --explorer-menu-more-bg-hover: #{dark.$explorer-menu-more-bg-hover};
     --explorer-menu-color-bg-hover: #{dark.$explorer-menu-color-bg-hover};
     --explorer-menu-color-bg-active: #{dark.$explorer-menu-color-bg-active};
     --explorer-menu-color-bg-line-active: #{dark.$explorer-menu-color-bg-line-active};
@@ -23,6 +24,7 @@
 
 :root {
     --icon-menu-width: 48px;
+    --explorer-menu-width: 300px;
 }
 
 .main {
@@ -61,6 +63,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
 
             &::after {
                 position: absolute;
@@ -78,11 +81,49 @@
                     color: var(--icon-menu-color-hover);
                 }
             }
+
+            &--active {
+                &::after {
+                    display: block;
+                }
+            }
         }
 
         .icon--menu {
             color: var(--icon-menu-color);
             height: calc(var(--icon-menu-width) / 2);
+        }
+    }
+
+    .explorer-menu {
+        width: var(--explorer-menu-width);
+        height: calc(100% - var(--header-height));
+        position: fixed;
+        top: var(--header-height);
+        left: var(--icon-menu-width);
+        background-color: var(--explorer-menu-bg-color);
+        color: var(--explorer-menu-color);
+        font-size: 11px;
+
+        &__title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+
+            .icon--more {
+                color: var(--explorer-menu-color);
+                width: 22px;
+                height: 22px;
+                border-radius: 3px;
+                margin-right: 12px;
+                cursor: pointer;
+                background-color: var(--explorer-menu-color-bg);
+
+                &:hover {
+                    background-color: var(--explorer-menu-more-bg-hover);
+                }
+            }
         }
     }
 }
