@@ -166,6 +166,9 @@ a {
 .main .icon-menu__link:hover .icon--menu {
   color: var(--icon-menu-color-hover);
 }
+.main .icon-menu__link--active .icon--menu {
+  color: var(--icon-menu-color-hover);
+}
 .main .icon-menu__link--active::after {
   display: block;
 }
@@ -198,10 +201,26 @@ a {
   width: 18px;
   height: 18px;
   border-radius: 5px;
+  padding: 2px;
   margin-right: 12px;
   cursor: pointer;
   background-color: var(--explorer-menu-color-bg);
 }
 .main .explorer-menu__title .icon--more:hover {
   background-color: var(--explorer-menu-more-bg-hover);
+}
+.main .explorer-menu__toggle {
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  position: relative;
+  padding-left: 20px;
+}
+.main .explorer-menu__toggle .icon--dropdown {
+  width: 12px;
+  margin: 0 4px;
+}
+.main .explorer-menu__item .icon {
+  width: 10px;
 }

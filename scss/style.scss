@@ -84,6 +84,10 @@
             }
 
             &--active {
+                .icon--menu {
+                    color: var(--icon-menu-color-hover);
+                }
+
                 &::after {
                     display: block;
                 }
@@ -121,6 +125,7 @@
                 width: 18px;
                 height: 18px;
                 border-radius: 5px;
+                padding: 2px;
                 margin-right: 12px;
                 cursor: pointer;
                 background-color: var(--explorer-menu-color-bg);
@@ -128,6 +133,30 @@
                 &:hover {
                     background-color: var(--explorer-menu-more-bg-hover);
                 }
+            }
+        }
+
+        &__section {}
+
+        &__toggle {
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+            position: relative;
+            padding-left: 20px;
+
+            .icon--dropdown {
+                width: 12px;
+                margin: 0 4px;
+            }
+        }
+
+        &__list {}
+
+        &__item {
+            .icon {
+                width: 10px;
             }
         }
     }

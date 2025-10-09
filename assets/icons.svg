@@ -38,6 +38,9 @@
     <symbol id="icon-explorer-more" viewBox="0 0 24 25">
         <path fill="currentColor" d="M6 12.09a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m7.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m7.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
     </symbol>
+    <symbol id="icon-explorer-dropdown" viewBox="0 0 24 25">
+        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.163 12.333 5.805l.619.619-4.667 4.667h-.618L3 6.424l.619-.619 4.357 4.358Z"/>
+    </symbol>
 
     <symbol id="icon-seti-css" viewBox="0 0 32 32">
         <path fill="#529bba" d="m10.3 23.3.8-4H8.6v-2.1h3l.5-2.5H9.5v-2.1h3.1l.8-3.9h2.8l-.8 3.9h2.8l.8-3.9h2.8l-.8 3.9h2.5v2.1h-2.9l-.6 2.5h2.6v2.1h-3l-.8 4H16l.8-4H14l-.8 4zm6.9-6.1.5-2.5h-2.8l-.5 2.5z"/>
