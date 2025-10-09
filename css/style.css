@@ -142,17 +142,18 @@ a {
 }
 .main .icon-menu__item {
   width: 100%;
+  position: relative;
 }
 .main .icon-menu__link {
   width: 100%;
   height: var(--icon-menu-width);
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 .main .icon-menu__link::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
