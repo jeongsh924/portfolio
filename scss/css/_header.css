@@ -64,7 +64,6 @@ a {
   border-radius: 5px;
   background-color: var(--menu-bar-bg);
   cursor: default;
-  letter-spacing: -0.5px;
 }
 .header .menu-bar__link:hover {
   color: var(--menu-bar-color-hover);
