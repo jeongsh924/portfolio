@@ -32,23 +32,59 @@
   --content-bg-color: oklch(0.235 0 0);
   --content-default-color: oklch(0.8699 0 0);
   --content-welcome-title-color: oklch(0.8452 0 0);
+  --content-welcome-intro-color: oklch(0.6797 0 0);
   --content-welcome-color: oklch(0.7219 0 0);
+  --content-welcome-point-color: oklch(0.6657 0.1806 254.62);
+  --content-welcome-note-color: oklch(0.4532 0 0);
   --footer-bg-color: oklch(0.567 0.154556 248.5156);
-  --footer-color: oklch(1 0 0);
+  --footer-color: oklch(0.9817 0.0057 264.53);
   --footer-item-bg-active: oklch(0.5913 0.1359 244.32);
+  --footer-remote-color: oklch(1 0 0);
+  --footer-remote-bg-color: oklch(0.5398 0.1091 163.81);
+  --footer-remote-bg-color-hover: oklch(0.5895 0.1005 167.52);
 }
 
 .footer {
   width: 100%;
   height: var(--footer-height);
   background-color: var(--footer-bg-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 1;
   color: var(--footer-color);
   font-size: 12px;
+}
+.footer .status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .status-bar__list {
+  display: block;
+  height: var(--footer-height);
+}
+.footer .status-bar__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.footer .status-bar__item .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--footer-color);
+}
+.footer .status-bar__item--remote {
+  background-color: var(--footer-remote-bg-color);
+  min-width: 34px;
+  padding: 0;
+}
+.footer .status-bar__item--remote .icon {
+  color: var(--footer-remote-color);
+}
+.footer .status-bar__item--remote:hover {
+  background-color: var(--footer-remote-bg-color-hover);
 }

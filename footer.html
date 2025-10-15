@@ -1,18 +1,54 @@
     <footer class="footer">
         <div class="status-bar">
             <ul class="status-bar__list status-bar__list--left">
-                <li class="status-bar__item"><i></i></li>
-                <li class="status-bar__item"><i></i><span class="status-bar__text">main</span></li>
-                <li class="status-bar__item">
-                    <span class="status-bar__problems status-bar__problems--error"><i></i><span class="status-bar__text">0</span></span>
-                    <span class="status-bar__problems status-bar__problems--warning"><i></i><span class="status-bar__text">0</span></span>
+                <li class="status-bar__item status-bar__item--remote" aria-label="remote">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-statusbar-remote"></use>
+                    </svg>
+                </li>
+                <li class="status-bar__item" aria-label="branch">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-menu-source-control"></use>
+                    </svg>
+                    <span class="status-bar__text">main</span>
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-statusbar-sync"></use>
+                    </svg>
+                </li>
+                <li class="status-bar__item status-bar__item--problems">
+                    <span class="status-bar__problems status-bar__problems--error" aria-label="error">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-statusbar-error"></use>
+                        </svg>
+                        <span class="status-bar__text">0</span>
+                    </span>
+                    <span class="status-bar__problems status-bar__problems--warning" aria-label="warning">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-statusbar-warning"></use>
+                        </svg>
+                        <span class="status-bar__text">0</span>
+                    </span>
                 </li>
             </ul>
             <ul class="status-bar__list status-bar__list--right">
                 <li class="status-bar__item"><span class="status-bar__text">UTF-8</span></li>
                 <li class="status-bar__item"><span class="status-bar__text">CRLF</span></li>
-                <li class="status-bar__item"><i></i><span class="status-bar__text">HTML</span></li>
-                <li class="status-bar__item"><i></i></li>
+                <li class="status-bar__item status-bar__item--language" aria-label="select language mode">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-statusbar-symbol-namespace"></use>
+                    </svg>
+                    <span class="status-bar__text">HTML</span>
+                </li>
+                <li class="status-bar__item" aria-label="copilot">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-statusbar-copilot"></use>
+                    </svg>
+                </li>
+                <li class="status-bar__item" aria-label="bell">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons.svg#icon-statusbar-bell"></use>
+                    </svg>
+                </li>
             </ul>
         </div>
     </footer>

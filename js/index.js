@@ -34,5 +34,40 @@ $(function(){
         } else {
             $('.explorer-menu__link').removeClass('explorer-menu__link--click'); // 다른 메뉴 클릭 시 제거
         }
+
+        // footer status-bar language 변경
+        const tabText = $(`.tab-menu__item[data-target="${targetId}"]`).find('.tab-menu__text').text().trim();
+        
+        let fileExtension;
+        if (tabText.includes('.')) {
+            const parts = tabText.split('.');
+            fileExtension = parts[parts.length - 1]; // css
+        } else {
+            // '.'이 없으면 기본값을 html로 설정
+            fileExtension = 'html';
+        }
+
+        const languageMap = {
+        html: 'HTML',
+        css: 'CSS',
+        js: 'JavaScript',
+        md: 'Markdown',
+        json: 'JSON',
+        scss: 'SCSS'
+        };
+
+        let language;
+
+        // fileExtension이 languageMap에 있는지 확인
+        if (languageMap.hasOwnProperty(fileExtension)) {
+            // 있으면 해당 값을 사용
+            language = languageMap[fileExtension];
+        } else {
+            // 없으면 fileExtension을 대문자로 변환해서 사용
+            language = fileExtension.toUpperCase();
+        }
+
+        $('.status-bar__item--language .status-bar__text').text(language);
+
     });
 })

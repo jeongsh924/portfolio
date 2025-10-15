@@ -37,6 +37,9 @@
   --content-welcome-point-color: oklch(0.6657 0.1806 254.62);
   --content-welcome-note-color: oklch(0.4532 0 0);
   --footer-bg-color: oklch(0.567 0.154556 248.5156);
-  --footer-color: oklch(1 0 0);
-  --footer-item-bg-active: oklch(0.5913 0.1359 244.32);
+  --footer-color: oklch(0.9817 0.0057 264.53);
+  --footer-item-bg-hover: oklch(0.5913 0.1359 244.32);
+  --footer-remote-color: oklch(1 0 0);
+  --footer-remote-bg-color: oklch(0.5398 0.1091 163.81);
+  --footer-remote-bg-color-hover: oklch(0.5895 0.1005 167.52);
 }
