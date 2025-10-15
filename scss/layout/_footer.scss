@@ -1,0 +1,16 @@
+@use '../themes/dark';
+
+.footer {
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--footer-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    color: var(--footer-color);
+    font-size: 12px;
+}

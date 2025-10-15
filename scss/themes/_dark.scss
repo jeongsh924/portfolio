@@ -1,0 +1,51 @@
+@use '../abstract/palette' as palette;
+@use '../tokens/tokens.dark' as dark;
+
+[data-theme="dark"] {
+    --header-bg-color: #{dark.$header-bg-color};
+    --menu-bar-color: #{dark.$menu-bar-color};
+    --menu-bar-color-hover: #{dark.$menu-bar-color-hover};
+    --menu-bar-bg: #{dark.$menu-bar-bg};
+    --menu-bar-bg-hover: #{dark.$menu-bar-bg-hover};
+    --header-title-color: #{dark.$header-title-color};
+    --window-controls-color: #{dark.$window-controls-color};
+    --window-controls-color-hover: #{dark.$window-controls-color-hover};
+    --window-controls-close-color-hover: #{dark.$window-controls-close-color-hover};
+    --window-controls-close-bg-hover: #{dark.$window-controls-close-bg-hover};
+
+    --main-bg-color: #{dark.$main-bg-color};
+    
+    --icon-menu-bg-color: #{dark.$icon-menu-bg-color};
+    --icon-menu-color: #{dark.$icon-menu-color};
+    --icon-menu-color-hover: #{dark.$icon-menu-color-hover};
+    
+    --explorer-menu-bg-color: #{dark.$explorer-menu-bg-color};
+    --explorer-menu-color: #{dark.$explorer-menu-color};
+    --explorer-menu-color-bg: #{dark.$explorer-menu-color-bg};
+    --explorer-menu-color-bg-line: #{dark.$explorer-menu-color-bg-line};
+    --explorer-menu-more-bg-hover: #{dark.$explorer-menu-more-bg-hover};
+    --explorer-menu-color-bg-hover: #{dark.$explorer-menu-color-bg-hover};
+    --explorer-menu-color-bg-active: #{dark.$explorer-menu-color-bg-active};
+    --explorer-menu-color-click: #{dark.$explorer-menu-color-click};
+    --explorer-menu-color-bg-click: #{dark.$explorer-menu-color-bg-click};
+    --explorer-menu-color-bg-line-click: #{dark.$explorer-menu-color-bg-line-click};
+    
+    --tab-menu-bg-color: #{dark.$tab-menu-bg-color};
+    --tab-menu-item-bg-color: #{dark.$tab-menu-item-bg-color};
+    --tab-menu-item-line-color: #{dark.$explorer-menu-bg-color};
+    --tab-menu-color: #{dark.$tab-menu-color};
+    --tab-menu-color-active: #{dark.$tab-menu-color-active};
+    --tab-menu-item-bg-active: #{dark.$content-bg-color};
+
+    --content-bg-color: #{dark.$content-bg-color};
+    --content-default-color: #{dark.$content-default-color};
+
+    --content-welcome-title-color: #{dark.$gray-200};
+    --content-welcome-intro-color: #{dark.$content-welcome-intro-color};
+    --content-welcome-color: #{dark.$content-welcome-color};
+    --content-welcome-note-color: #{dark.$gray-600};
+
+    --footer-bg-color: #{dark.$footer-bg-color};
+    --footer-color: #{dark.$footer-color};
+    --footer-item-bg-active: #{dark.$footer-item-bg-active};
+}

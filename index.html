@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="css/SegoeUI.css">
     <link rel="stylesheet" href="css/Consolas.css">
@@ -17,46 +19,60 @@
         <aside class="icon-menu" aria-label="아이콘 메뉴">
             <nav>
                 <ul class="icon-menu__list">
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link icon-menu__link--active" aria-current="page">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-files"></use>
-                        </svg>
-                    </a></li>
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-search"></use>
-                        </svg>
-                    </a></li>
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-source-control"></use>
-                        </svg>
-                    </a></li>
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-debug-alt"></use>
-                        </svg>
-                    </a></li>
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-extensions"></use>
-                        </svg>
-                    </a></li>
+                    <li class="icon-menu__item" data-target="panel-about">
+                        <a href="#" class="icon-menu__link" aria-label="about">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-files"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item" data-target="panel-skills">
+                        <a href="#" class="icon-menu__link" aria-label="skills">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-search"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item" data-target="panel-projects">
+                        <a href="#" class="icon-menu__link" aria-label="projects">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-source-control"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item" data-target="panel-logs">
+                        <a href="#" class="icon-menu__link" aria-label="logs">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-debug-alt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item" data-target="panel-contact">
+                        <a href="#" class="icon-menu__link" aria-label="contact">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-extensions"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
 
                 <hr role="separator">
 
                 <ul class="icon-menu__list icon-menu__list--footer">
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-settings-gear"></use>
-                        </svg>
-                    </a></li>
-                    <li class="icon-menu__item"><a href="#" class="icon-menu__link">
-                        <svg class="icon icon--menu" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-menu-v2"></use>
-                        </svg>
-                    </a></li>
+                    <li class="icon-menu__item">
+                        <a href="#" class="icon-menu__link" aria-label="user">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-v2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a href="#" class="icon-menu__link" aria-label="setting">
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-settings-gear"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -74,86 +90,174 @@
                     PORTFOLIO
                 </button>
                 <ul class="explorer-menu__list">
-                    <li class="explorer-menu__item"><a href="#" class="explorer-menu__link explorer-menu__link--active" aria-current="page">
-                        <svg class="icon icon--js" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-javascript"></use>
-                        </svg><span>about.js</span></a>
+                    <li class="explorer-menu__item" data-target="panel-about">
+                        <a href="#" class="explorer-menu__link" aria-current="page">
+                            <svg class="icon icon--html" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-html"></use>
+                            </svg>
+                            <span>about.html</span>
+                        </a>
+                        </li>
+                    <li class="explorer-menu__item" data-target="panel-skills">
+                        <a href="#" class="explorer-menu__link">
+                            <svg class="icon icon--css" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-css"></use>
+                            </svg>
+                            <span>skills.css</span>
+                        </a>
                     </li>
-                    <li class="explorer-menu__item"><a href="#" class="explorer-menu__link">
-                        <svg class="icon icon--css" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-css"></use>
-                        </svg>
-                        <span>skills.css</span></a>
+                    <li class="explorer-menu__item" data-target="panel-projects">
+                        <a href="#" class="explorer-menu__link">
+                            <svg class="icon icon--js" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-javascript"></use>
+                            </svg>
+                            <span>projects.js</span>
+                        </a>
                     </li>
-                    <li class="explorer-menu__item"><a href="#" class="explorer-menu__link">
-                        <svg class="icon icon--html" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-html"></use>
-                        </svg>
-                        <span>projects.html</span></a>
+                    <li class="explorer-menu__item" data-target="panel-logs">
+                        <a href="#" class="explorer-menu__link">
+                            <svg class="icon icon--md" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-markdown"></use>
+                            </svg>
+                            <span>logs.md</span>
+                        </a>
                     </li>
-                    <li class="explorer-menu__item"><a href="#" class="explorer-menu__link">
-                        <svg class="icon icon--md" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-markdown"></use>
-                        </svg>
-                        <span>logs.md</span></a>
-                    </li>
-                    <li class="explorer-menu__item"><a href="#" class="explorer-menu__link">
-                        <svg class="icon icon--json" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-json"></use>
-                        </svg>
-                        <span>contact.json</span></a>
+                    <li class="explorer-menu__item" data-target="panel-contact">
+                        <a href="#" class="explorer-menu__link">
+                            <svg class="icon icon--json" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-json"></use>
+                            </svg>
+                            <span>contact.json</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
         <div class="tab-menu" aria-label="탭 메뉴">
             <ul class="tab-menu__list" role="tablist">
-                <li class="tab-menu__item" role="tab" aria-controls="panel-welcome" aria-selected="true"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--vscode" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-vscode"></use>
-                    </svg>
-                    <span class="tab-menu__text">Welcome</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-welcome" aria-selected="true">
+                    <a href="#" class="tab-menu__link tab-menu__link--active">
+                        <svg class="icon icon--vscode" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-vscode"></use>
+                        </svg>
+                        <span class="tab-menu__text">Welcome</span>
+                    </a>
                 </li>
-                <li class="tab-menu__item" role="tab" aria-controls="panel-about"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--js" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-seti-javascript"></use>
-                    </svg>
-                    <span class="tab-menu__text">about.js</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-about">
+                    <a href="#" class="tab-menu__link">
+                        <svg class="icon icon--html" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-seti-html"></use>
+                        </svg>
+                        <span class="tab-menu__text">about.html</span>
+                    </a>
                 </li>
-                <li class="tab-menu__item" role="tab" aria-controls="panel-skills"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--css" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-seti-css"></use>
-                    </svg>
-                    <span class="tab-menu__text">skills.css</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-skills">
+                    <a href="#" class="tab-menu__link">
+                        <svg class="icon icon--css" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-seti-css"></use>
+                        </svg>
+                        <span class="tab-menu__text">skills.css</span>
+                    </a>
                 </li>
-                <li class="tab-menu__item" role="tab" aria-controls="panel-projects"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--html" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-seti-html"></use>
-                    </svg>
-                    <span class="tab-menu__text">projects.html</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-projects">
+                    <a href="#" class="tab-menu__link">
+                        <svg class="icon icon--js" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-seti-javascript"></use>
+                        </svg>
+                        <span class="tab-menu__text">projects.js</span>
+                    </a>
                 </li>
-                <li class="tab-menu__item" role="tab" aria-controls="panel-logs"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--md" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-seti-markdown"></use>
-                    </svg>
-                    <span class="tab-menu__text">logs.md</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-logs">
+                    <a href="#" class="tab-menu__link">
+                        <svg class="icon icon--md" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-seti-markdown"></use>
+                        </svg>
+                        <span class="tab-menu__text">logs.md</span>
+                    </a>
                 </li>
-                <li class="tab-menu__item" role="tab" aria-controls="panel-contact"><a href="#" class="tab-menu__link">
-                    <svg class="icon icon--json" aria-hidden="true">
-                        <use href="assets/icons.svg#icon-seti-json"></use>
-                    </svg>
-                    <span class="tab-menu__text">contact.json</span>
-                </a>
+                <li class="tab-menu__item" data-target="panel-contact">
+                    <a href="#" class="tab-menu__link">
+                        <svg class="icon icon--json" aria-hidden="true">
+                            <use href="assets/icons.svg#icon-seti-json"></use>
+                        </svg>
+                        <span class="tab-menu__text">contact.json</span>
+                    </a>
                 </li>
             </ul>
         </div>
         <article class="content">
-
+            <section id="panel-welcome" class="content__item content__item--welcome content__item--active">
+                <h1># 👋 Welcome</h1>
+                <h2 class="welcome-intro">Visual Studio Code UI를 모티브로 제작된 웹 퍼블리셔의 포트폴리오입니다.</h2>
+                <section class="welcome-group welcome-group__start">
+                    <h3 class="welcome-group__title">Start</h3>
+                    <ul class="welcome-list">
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-files"></use>
+                            </svg>
+                            <span>`about.html` : 자기소개</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-search"></use>
+                            </svg>
+                            <span>`skills.css` : 기술 스택</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-source-control"></use>
+                            </svg>
+                            <span>`projects.js` : 프로젝트 경험</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-debug-alt"></use>
+                            </svg>
+                            <span>`logs.md` : 경력 및 개발 회고</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-extensions"></use>
+                            </svg>
+                            <span>`contact.json` : 연락 수단</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="welcome-group welcome-group__etc">
+                    <h3 class="welcome-group__title">Options</h3>
+                    <ul class="welcome-list">
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-v2"></use>
+                            </svg>
+                            <span>`user` : 정보 요약</span>
+                        </li>
+                        <li>
+                            <svg class="icon icon--menu" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-menu-settings-gear"></use>
+                            </svg>
+                            <span>`setting : 테마 변경`</span>
+                        </li>
+                    </ul>
+                </section>
+                <h4 class="welcome-note">&gt; 웹 퍼블리셔 실무 경험을 바탕으로 하여 한 눈에 파악하기 좋은 구성을 만들도록 노력하였습니다.</h4>
+            </section>
+            <section id="panel-about" class="content__item content__item--about" hidden>
+                about
+            </section>
+            <section id="panel-skills" class="content__item content__item--skills" hidden>
+                skills
+            </section>
+            <section id="panel-projects" class="content__item content__item--projects" hidden>
+                projects
+            </section>
+            <section id="panel-logs" class="content__item content__item--logs" hidden>
+                logs
+            </section>
+            <section id="panel-contact" class="content__item content__item--contact" hidden>
+                contact
+            </section>
         </article>
     </main>
 

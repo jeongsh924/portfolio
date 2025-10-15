@@ -1,30 +1,9 @@
-@use '../abstract/palette' as palette;
-@use '../tokens/tokens.dark' as dark;
-
-[data-theme="dark"] {
-    --header-bg-color: #{dark.$header-bg-color};
-    --menu-bar-color: #{dark.$menu-bar-color};
-    --menu-bar-color-hover: #{dark.$menu-bar-color-hover};
-    --menu-bar-bg: #{dark.$menu-bar-bg};
-    --menu-bar-bg-hover: #{dark.$menu-bar-bg-hover};
-    --window-controls-color: #{dark.$window-controls-color};
-    --window-controls-color-hover: #{dark.$window-controls-color-hover};
-    --window-controls-close-color-hover: #{dark.$window-controls-close-color-hover};
-    --window-controls-close-bg-hover: #{dark.$window-controls-close-bg-hover};
-}
-
-:root {
-    --header-height: 35px;
-}
+@use '../themes/dark';
 
 body {
     font-family: 'Segoe UI', 'Pretendard', sans-serif;
     font-size: 14px;
     font-weight: 400;
-}
-
-a {
-    text-decoration: none;
 }
 
 .header {
@@ -34,7 +13,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     .logo {
         width: 16px;
@@ -48,7 +30,7 @@ a {
     }
 
     .title {
-        color: palette.$white;
+        color: var(--header-title-color);
         font-size: 16px;
         position: absolute;
         left: 50%;
@@ -63,6 +45,7 @@ a {
         &__item {
             display: inline-flex;
         }
+
         &__link {
             display: flex;
             color: var(--menu-bar-color);

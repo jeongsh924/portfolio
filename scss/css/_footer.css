@@ -33,86 +33,22 @@
   --content-default-color: oklch(0.8699 0 0);
   --content-welcome-title-color: oklch(0.8452 0 0);
   --content-welcome-color: oklch(0.7219 0 0);
+  --footer-bg-color: oklch(0.567 0.154556 248.5156);
+  --footer-color: oklch(1 0 0);
+  --footer-item-bg-active: oklch(0.5913 0.1359 244.32);
 }
 
-body {
-  font-family: "Segoe UI", "Pretendard", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.header {
+.footer {
   width: 100%;
-  height: var(--header-height);
-  background-color: var(--header-bg-color);
+  height: var(--footer-height);
+  background-color: var(--footer-bg-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
-  top: 0;
   left: 0;
+  bottom: 0;
   z-index: 1;
-}
-.header .logo {
-  width: 16px;
-  height: 100%;
-  margin: 0 10px;
-}
-.header .logo .icon--vscode {
-  width: 100%;
-  height: 100%;
-}
-.header .title {
-  color: var(--header-title-color);
-  font-size: 16px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.header .menu-bar {
-  display: inline-flex;
-  margin-right: auto;
-  font-size: 13px;
-}
-.header .menu-bar__item {
-  display: inline-flex;
-}
-.header .menu-bar__link {
-  display: flex;
-  color: var(--menu-bar-color);
-  padding: 5px 8px;
-  border-radius: 5px;
-  background-color: var(--menu-bar-bg);
-  cursor: default;
-}
-.header .menu-bar__link:hover {
-  color: var(--menu-bar-color-hover);
-  background-color: var(--menu-bar-bg-hover);
-}
-.header .window-controls {
-  display: flex;
-  height: 100%;
-}
-.header .window-controls__btn {
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  width: 45px;
-  height: 100%;
-  transition: all 0.2s;
-}
-.header .window-controls__btn .icon {
-  width: 16px;
-  height: 100%;
-  color: var(--window-controls-color);
-  transition: all 0.2s;
-}
-.header .window-controls__btn:hover {
-  background-color: var(--window-controls-color-hover);
-}
-.header .window-controls__btn--close:hover {
-  background-color: var(--window-controls-close-bg-hover);
-}
-.header .window-controls__btn--close:hover .icon {
-  color: var(--window-controls-close-color-hover);
+  color: var(--footer-color);
+  font-size: 12px;
 }
