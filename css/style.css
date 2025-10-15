@@ -34,6 +34,7 @@
   --content-welcome-title-color: oklch(0.8452 0 0);
   --content-welcome-intro-color: oklch(0.6797 0 0);
   --content-welcome-color: oklch(0.7219 0 0);
+  --content-welcome-point-color: oklch(0.6657 0.1806 254.62);
   --content-welcome-note-color: oklch(0.4532 0 0);
   --footer-bg-color: oklch(0.567 0.154556 248.5156);
   --footer-color: oklch(1 0 0);
@@ -374,7 +375,40 @@ body {
 .main .content__item--active {
   display: block;
 }
+.main .content__item--welcome {
+  margin-top: 50px;
+}
 .main .content__item--welcome h1 {
   color: var(--content-welcome-title-color);
   font-size: 35px;
+}
+.main .content__item--welcome .welcome-intro {
+  color: var(--content-welcome-intro-color);
+  font-size: 18px;
+  margin-top: 10px;
+}
+.main .content__item--welcome .welcome-group {
+  margin-top: 35px;
+}
+.main .content__item--welcome .welcome-group__title {
+  color: var(--content-welcome-title-color);
+  font-size: 18px;
+}
+.main .content__item--welcome .welcome-group .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.main .content__item--welcome .welcome-group__link {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  color: var(--content-welcome-point-color);
+}
+.main .content__item--welcome .welcome-group__link:hover {
+  text-decoration: underline;
+}
+.main .content__item--welcome .welcome-note {
+  color: var(--content-welcome-note-color);
+  margin-top: 50px;
 }

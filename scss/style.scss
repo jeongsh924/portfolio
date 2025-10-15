@@ -32,9 +32,48 @@
             }
 
             &--welcome {
+                margin-top: 50px;
+
                 h1 {
                     color: var(--content-welcome-title-color);
                     font-size: 35px;
+                }
+
+                .welcome-intro {
+                    color: var(--content-welcome-intro-color);
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+
+                .welcome-group {
+                    margin-top: 35px;
+
+                    &__title {
+                        color: var(--content-welcome-title-color);
+                        font-size: 18px;
+                    }
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 8px;
+                    }
+
+                    &__link {
+                        display: flex;
+                        align-items: center;
+                        margin: 15px 0;
+                        color: var(--content-welcome-point-color);
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .welcome-note {
+                    color: var(--content-welcome-note-color);
+                    margin-top: 50px;
                 }
             }
         }
