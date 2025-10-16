@@ -1,5 +1,6 @@
 @use '../abstract/palette' as palette;
 @use '../tokens/tokens.dark' as dark;
+@forward '../tokens/tokens.dark' as dark-*;
 
 [data-theme="dark"] {
     --header-bg-color: #{dark.$header-bg-color};
@@ -45,6 +46,13 @@
     --content-welcome-color: #{dark.$content-welcome-color};
     --content-welcome-point-color: #{dark.$blue-450};
     --content-welcome-note-color: #{dark.$gray-600};
+
+    --content-line-numbers-color: #{dark.$content-line-numbers-color};
+    
+    --content-projects-line-color: #{dark.$content-projects-line-color};
+    --content-projects-line-shadow-color: #{dark.$content-projects-line-shadow-color};
+    --content-projects-title-color: #{dark.$content-projects-title-color};
+    --content-js-doctype-highlight-color: #{dark.$content-js-doctype-highlight-color};
 
 
     --footer-bg-color: #{dark.$footer-bg-color};

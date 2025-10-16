@@ -11,9 +11,18 @@
     <link rel="stylesheet" href="css/Consolas.css">
     <link rel="stylesheet" href="css/common.css?v0">
     <link rel="stylesheet" href="css/style.css?v0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
 </head>
 <body data-theme="dark">
     <div id="header"></div>
+
+    <!-- vs2015 테마 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs2015.min.css">
 
     <main class="main">
         <aside class="icon-menu" aria-label="아이콘 메뉴">
@@ -258,13 +267,148 @@
                 <h4 class="welcome-note">&gt; 웹 퍼블리셔 실무 경험을 바탕으로 하여 한 눈에 파악하기 좋은 구성을 만들도록 노력하였습니다.</h4>
             </section>
             <section id="panel-about" class="content__item content__item--about" hidden>
-                about
+                <div class="code-block">
+                    <div class="line-numbers"></div>
+                    <pre><code class="hljs html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;title&gt;안녕하세요, ✨7년 10개월의 실전 경험을 바탕으로, 문제 해결 중심 퍼블리싱✨을 실천하는 웹 퍼블리셔 ○○○입니다.&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="About me"&gt;
+        2015년부터 2023년까지 다양한 프로젝트에 참여하며 HTML, CSS, 웹표준과 접근성은 물론,
+        유지보수성과 협업 효율을 고려한 퍼블리싱 전략을 체득해왔습니다.
+
+        공백기 동안 일본 취업을 목표로 기술과 언어를 학습했고, 이후 5개월간 일본 현지에서 임베디드 개발자로 일하며
+        개발자 간 커뮤니케이션과 문제 해결 능력을 더 확장했습니다.
+
+        이 때의 경험을 바탕으로 디자인, 사용자 경험, 개발 흐름 사이의 유기적 연결을 만드는 퍼블리셔로 지속적으로 성장하고자 합니다.
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                </div>
             </section>
             <section id="panel-skills" class="content__item content__item--skills" hidden>
-                skills
+                <div class="code-block">
+                    <div class="line-numbers"></div>
+                    <pre><code class="hljs css">/*
+    웹 퍼블리셔 ㅇㅇㅇ의 기술 역량
+*/
+
+/* 🎨 Graphics */
+
+.Photoshop::before {
+    content: "UI 컴포넌트 분해 및 상세페이지 제작 실무 경험 보유";
+}
+
+.Illustrator::before {
+    content: "벡터 아이콘 정리 능력으로 일관된 비주얼 유지 가능";
+}
+
+.figma::before {
+    content: "개인 프로젝트 활용 경험 기반으로 높은 이해도 보유";
+}
+
+
+/* 💻 Coding */
+
+.html::before {
+    content: "&lt;section&gt;, &lt;article&gt; 등 시맨틱 태그로 클린 마크업 구현 가능";
+}
+
+.css::before {
+    content: "SCSS 문법 이해, 스타일 상속 및 변수 활용 능숙";
+}
+
+.jquery::before {
+    content: "슬라이더, 팝업 등 실무 중심 구현 경험 풍부";
+}
+
+.webFont::before {
+    content: "웹폰트 적용 및 최적화 경험 다수";
+}
+
+.fontIcon::before {
+    content: "SVG 기반 벡터를 폰트아이콘으로 활용 가능";
+}
+
+
+/* 🎁 기타 */
+
+.git::before {
+    content: "버전 관리 목적의 Git 활용 경험 有";
+}
+
+.chatGPT::before {
+    content: "GPT API와 Notion 연동하여 뉴스 자동화 수집 시스템 구현";
+}
+                    </code></pre>
+                </div>
             </section>
             <section id="panel-projects" class="content__item content__item--projects" hidden>
-                projects
+                <div class="projects">
+                    <h1>참여 프로젝트 목록</h1>
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <article class="projects-card">
+                                <a href="#" class="projects-card__link" target="_blank">
+                                    <div class="projects-card__thumbnail">
+                                        <img src="assets/images/projects_notion-news.jpg" alt="Automated News Aggregator thumbnail">
+                                    </div>
+                                    <div class="projects-card__info">
+                                        <h3 class="projects-card__title">노션으로 뉴스 수집 자동화</h3>
+                                        <p class="projects-card__desc">바이브 코딩으로 매일 네이버 뉴스를 수집하는 코드 작성</p>
+                                        <div class="projects-card__tags">
+                                            <span class="projects-card__category projects-card__category--personal">#personal</span>
+                                            <span class="projects-card__category">#python</span>
+                                            <span class="projects-card__category">#notion</span>
+                                        </div>
+                                        <span class="projects-card__more">프로젝트 상세</span>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="projects__item">
+                            <article class="projects-card">
+                                <a href="#" class="projects-card__link" target="_blank">
+                                    <div class="projects-card__thumbnail">
+                                        <img src="assets/images/projects_webpro-pc.jpg" alt="Wepro Global Networks thumbnail">
+                                    </div>
+                                    <div class="projects-card__info">
+                                        <h3 class="projects-card__title">자사 홈페이지 퍼블리싱 및 유지보수</h3>
+                                        <p class="projects-card__desc">PC 홈페이지 유지보수 및 기능 개선, 모바일 전체 레이아웃 퍼블리싱</p>
+                                        <div class="projects-card__tags">
+                                            <span class="projects-card__category projects-card__category--company">#company</span>
+                                            <span class="projects-card__category">#scss</span>
+                                            <span class="projects-card__category">#jquery</span>
+                                        </div>
+                                        <span class="projects-card__more">프로젝트 상세</span>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="projects__item">
+                            <article class="projects-card">
+                                <a href="#" class="projects-card__link" target="_blank">
+                                    <div class="projects-card__thumbnail">
+                                        <img src="assets/images/projects_webpro-pc.jpg" alt="Wepro Global Networks thumbnail">
+                                    </div>
+                                    <div class="projects-card__info">
+                                        <h3 class="projects-card__title">자사 홈페이지 퍼블리싱 및 유지보수</h3>
+                                        <p class="projects-card__desc">PC 홈페이지 유지보수 및 기능 개선, 모바일 전체 레이아웃 퍼블리싱</p>
+                                        <div class="projects-card__tags">
+                                            <span class="projects-card__category projects-card__category--company">#company</span>
+                                            <span class="projects-card__category">#scss</span>
+                                            <span class="projects-card__category">#jquery</span>
+                                        </div>
+                                        <span class="projects-card__more">프로젝트 상세</span>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="panel-logs" class="content__item content__item--logs" hidden>
                 logs
