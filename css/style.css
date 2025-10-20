@@ -370,6 +370,7 @@ body {
   .tab-menu {
     left: var(--icon-menu-width);
     overflow: hidden;
+    width: calc(100% - var(--icon-menu-width));
   }
   .tab-menu__list {
     overflow-x: scroll;
@@ -668,10 +669,26 @@ body {
 @media screen and (max-width: 768px) {
   .content {
     margin-left: var(--icon-menu-width) !important;
+    width: calc(100% - var(--icon-menu-width));
   }
 }
 @media screen and (max-width: 768px) {
-  .content__item .code-block code {
+  .main .content__item {
+    padding: 0;
+    padding-bottom: var(--content-padding);
+    box-sizing: border-box;
+    line-height: 1.5;
+  }
+  .main .content__item--welcome {
+    margin-top: 0;
+  }
+  .main .content__item--welcome .welcome-note {
+    margin-top: 20px;
+  }
+  .main .content__item .code-block {
+    font-size: 14px;
+  }
+  .main .content__item .code-block code {
     white-space: pre-wrap;
     word-break: break-word;
   }

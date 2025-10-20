@@ -4,6 +4,7 @@
     .tab-menu {
         left: var(--icon-menu-width);
         overflow: hidden;
+        width: calc(100% - var(--icon-menu-width));
 
         &__list {
             overflow-x: scroll;

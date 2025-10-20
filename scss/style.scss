@@ -298,15 +298,33 @@
 @media screen and (max-width: 768px) {
     .content {
         margin-left: var(--icon-menu-width) !important;
+        width: calc(100% - var(--icon-menu-width));
     }
 }
 
 @media screen and (max-width: 768px) {
-    .content__item {
-        .code-block {
-            code {
-                white-space: pre-wrap;
-                word-break: break-word;
+    .main {
+        .content__item {
+            padding: 0;
+            padding-bottom: var(--content-padding);
+            box-sizing: border-box;
+            line-height: 1.5;
+
+            &--welcome {
+                margin-top: 0;
+
+                .welcome-note {
+                    margin-top: 20px;
+                }
+            }
+
+            .code-block {
+                font-size: 14px;
+
+                code {
+                    white-space: pre-wrap;
+                    word-break: break-word;
+                }
             }
         }
     }
