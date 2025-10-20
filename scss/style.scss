@@ -1,9 +1,12 @@
 @use 'themes/dark';
 @use 'globals/root';
-@use 'layout/header';
+@use 'layout/header' as header;
+@use 'layout/header.mobile' as headerMobile;
 @use 'layout/icon-menu';
-@use 'layout/explorer-menu';
-@use 'layout/tab-menu';
+@use 'layout/explorer-menu' as explorerMenu;
+@use 'layout/explorer-menu.mobile' as explorerMenuMobile;
+@use 'layout/tab-menu' as tabMenu;
+@use 'layout/tab-menu.mobile' as tabMenuMobile;
 @use 'layout/footer';
 
 .main {
@@ -23,6 +26,7 @@
 
         &__item {
             display: none;
+            width: 100%;
             min-height: 100%;
 
             &--active {
@@ -115,7 +119,7 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 2rem;
         margin-top: 50px;
     }
@@ -287,6 +291,23 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: var(--icon-menu-width) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content__item {
+        .code-block {
+            code {
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
         }
     }
 }

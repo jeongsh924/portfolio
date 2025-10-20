@@ -49,84 +49,19 @@
   --footer-remote-bg-color-hover: #329071;
 }
 
-body {
-  font-family: "Segoe UI", "Pretendard", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.header {
-  width: 100%;
-  height: var(--header-height);
-  background-color: var(--header-bg-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.header .logo {
-  width: 16px;
-  height: 100%;
-  margin: 0 10px;
-}
-.header .logo .icon--vscode {
-  width: 100%;
-  height: 100%;
-}
-.header .title {
-  color: var(--header-title-color);
-  font-size: 16px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.header .menu-bar {
-  display: inline-flex;
-  margin-right: auto;
-  font-size: 13px;
-}
-.header .menu-bar__item {
-  display: inline-flex;
-}
-.header .menu-bar__link {
-  display: flex;
-  color: var(--menu-bar-color);
-  padding: 5px 8px;
-  border-radius: 5px;
-  background-color: var(--menu-bar-bg);
-  cursor: default;
-}
-.header .menu-bar__link:hover {
-  color: var(--menu-bar-color-hover);
-  background-color: var(--menu-bar-bg-hover);
-}
-.header .window-controls {
-  display: flex;
-  height: 100%;
-}
-.header .window-controls__btn {
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  width: 45px;
-  height: 100%;
-  transition: all 0.2s;
-}
-.header .window-controls__btn .icon {
-  width: 16px;
-  height: 100%;
-  color: var(--window-controls-color);
-  transition: all 0.2s;
-}
-.header .window-controls__btn:hover {
-  background-color: var(--window-controls-color-hover);
-}
-.header .window-controls__btn--close:hover {
-  background-color: var(--window-controls-close-bg-hover);
-}
-.header .window-controls__btn--close:hover .icon {
-  color: var(--window-controls-close-color-hover);
+@media screen and (max-width: 768px) {
+  .tab-menu {
+    left: var(--icon-menu-width);
+    overflow: hidden;
+  }
+  .tab-menu__list {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .tab-menu__list::-webkit-scrollbar {
+    display: none;
+  }
 }

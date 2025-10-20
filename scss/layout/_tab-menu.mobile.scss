@@ -1,0 +1,20 @@
+@use '../themes/dark';
+
+@media screen and (max-width: 768px) {
+    .tab-menu {
+        left: var(--icon-menu-width);
+        overflow: hidden;
+
+        &__list {
+            overflow-x: scroll;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

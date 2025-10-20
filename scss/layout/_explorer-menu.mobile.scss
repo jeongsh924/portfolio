@@ -1,0 +1,7 @@
+@use '../themes/dark';
+
+@media screen and (max-width: 768px) {
+    .explorer-menu {
+        display: none;
+    }
+}

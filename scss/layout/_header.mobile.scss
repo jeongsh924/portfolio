@@ -1,0 +1,22 @@
+@use '../themes/dark';
+
+@media screen and (max-width: 768px) {
+    .header {
+        .logo,
+        .menu-bar,
+        .window-controls {
+            display: none;
+        }
+
+        .title {
+            position: relative;
+            left: auto;
+            transform: none;
+            text-align: center;
+            width: 100%;
+            font-size: 16px;
+            color: var(--header-title-color);
+            padding: 10px 0;
+        }
+    }
+}
