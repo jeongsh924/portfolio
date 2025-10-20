@@ -604,6 +604,10 @@ body {
   background: linear-gradient(to right in oklch, #0069cc, #7400cc);
 }
 
+.content__item--contact a {
+  color: #d69d85;
+}
+
 .footer {
   width: 100%;
   height: var(--footer-height);
