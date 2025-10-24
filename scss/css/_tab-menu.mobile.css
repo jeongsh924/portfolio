@@ -51,18 +51,45 @@
 
 @media screen and (max-width: 768px) {
   .tab-menu {
-    left: var(--icon-menu-width);
-    overflow: hidden;
-    width: calc(100% - var(--icon-menu-width));
-  }
-  .tab-menu__list {
-    overflow-x: scroll;
+    overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  .tab-menu__list::-webkit-scrollbar {
+  .tab-menu-wrapper {
+    left: var(--icon-menu-width);
+    width: calc(100% - var(--icon-menu-width));
+  }
+  .tab-menu::-webkit-scrollbar {
     display: none;
+  }
+  .tab-menu__list {
+    display: inline-flex;
+    width: max-content;
+    white-space: nowrap;
+  }
+  .tab-menu-scrollbar {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 10px;
+    background-color: transparent;
+    position: relative;
+    width: calc(100% - 12px);
+    z-index: 1;
+    margin: 0 6px;
+  }
+  .tab-menu-scrollbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .tab-menu-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .tab-menu-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+  }
+  .tab-menu-scrollbar__inner {
+    height: 0;
   }
 }

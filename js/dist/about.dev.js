@@ -1,0 +1,15 @@
+"use strict";
+
+$(function () {
+  var aboutCode = "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <title>\uC548\uB155\uD558\uC138\uC694, \u27287\uB144 10\uAC1C\uC6D4\uC758 \uC2E4\uC804 \uACBD\uD5D8\uC744 \uBC14\uD0D5\uC73C\uB85C, \uBB38\uC81C \uD574\uACB0 \uC911\uC2EC \uD37C\uBE14\uB9AC\uC2F1\u2728\uC744 \uC2E4\uCC9C\uD558\uB294 \uC6F9 \uD37C\uBE14\uB9AC\uC154 \u25CB\u25CB\u25CB\uC785\uB2C8\uB2E4.</title>\n</head>\n<body>\n    <div class=\"About me\">\n        2015\uB144\uBD80\uD130 2023\uB144\uAE4C\uC9C0 \uB2E4\uC591\uD55C \uD504\uB85C\uC81D\uD2B8\uC5D0 \uCC38\uC5EC\uD558\uBA70 HTML, CSS, \uC6F9\uD45C\uC900\uACFC \uC811\uADFC\uC131\uC740 \uBB3C\uB860,\n        \uC720\uC9C0\uBCF4\uC218\uC131\uACFC \uD611\uC5C5 \uD6A8\uC728\uC744 \uACE0\uB824\uD55C \uD37C\uBE14\uB9AC\uC2F1 \uC804\uB7B5\uC744 \uCCB4\uB4DD\uD574\uC654\uC2B5\uB2C8\uB2E4.\n\n        \uACF5\uBC31\uAE30 \uB3D9\uC548 \uC77C\uBCF8 \uCDE8\uC5C5\uC744 \uBAA9\uD45C\uB85C \uAE30\uC220\uACFC \uC5B8\uC5B4\uB97C \uD559\uC2B5\uD588\uACE0, \uC774\uD6C4 5\uAC1C\uC6D4\uAC04 \uC77C\uBCF8 \uD604\uC9C0\uC5D0\uC11C \uC784\uBCA0\uB514\uB4DC \uAC1C\uBC1C\uC790\uB85C \uC77C\uD558\uBA70\n        \uAC1C\uBC1C\uC790 \uAC04 \uCEE4\uBBA4\uB2C8\uCF00\uC774\uC158\uACFC \uBB38\uC81C \uD574\uACB0 \uB2A5\uB825\uC744 \uB354 \uD655\uC7A5\uD588\uC2B5\uB2C8\uB2E4.\n\n        \uC774 \uB54C\uC758 \uACBD\uD5D8\uC744 \uBC14\uD0D5\uC73C\uB85C \uB514\uC790\uC778, \uC0AC\uC6A9\uC790 \uACBD\uD5D8, \uAC1C\uBC1C \uD750\uB984 \uC0AC\uC774\uC758 \uC720\uAE30\uC801 \uC5F0\uACB0\uC744 \uB9CC\uB4DC\uB294 \uD37C\uBE14\uB9AC\uC154\uB85C \uC9C0\uC18D\uC801\uC73C\uB85C \uC131\uC7A5\uD558\uACE0\uC790 \uD569\uB2C8\uB2E4.\n    </div>\n</body>\n</html>";
+  var aboutHighlighted = hljs.highlight(aboutCode, {
+    language: 'html'
+  }).value;
+  var $codeBlock = $('#panel-about .code-block');
+  if (!$codeBlock.length) return;
+  var lines = aboutHighlighted.split('\n');
+  var html = lines.map(function (line, i) {
+    return "\n        <div class=\"code-line code-line".concat(i + 1, "\">\n        <span class=\"line-number\">").concat(i + 1, "</span>\n        <span class=\"code-text\">").concat(line || '&nbsp;', "</span>\n        </div>\n    ");
+  }).join('');
+  $codeBlock.html(html);
+});

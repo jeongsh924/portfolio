@@ -142,57 +142,62 @@
                 </ul>
             </div>
         </section>
-        <div class="tab-menu" aria-label="탭 메뉴">
-            <ul class="tab-menu__list" role="tablist">
-                <li class="tab-menu__item" data-target="panel-welcome" aria-selected="true">
-                    <a href="#" class="tab-menu__link tab-menu__link--active">
-                        <svg class="icon icon--vscode" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-vscode"></use>
-                        </svg>
-                        <span class="tab-menu__text">Welcome</span>
-                    </a>
-                </li>
-                <li class="tab-menu__item" data-target="panel-about">
-                    <a href="#" class="tab-menu__link">
-                        <svg class="icon icon--html" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-html"></use>
-                        </svg>
-                        <span class="tab-menu__text">about.html</span>
-                    </a>
-                </li>
-                <li class="tab-menu__item" data-target="panel-skills">
-                    <a href="#" class="tab-menu__link">
-                        <svg class="icon icon--css" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-css"></use>
-                        </svg>
-                        <span class="tab-menu__text">skills.css</span>
-                    </a>
-                </li>
-                <li class="tab-menu__item" data-target="panel-projects">
-                    <a href="#" class="tab-menu__link">
-                        <svg class="icon icon--js" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-javascript"></use>
-                        </svg>
-                        <span class="tab-menu__text">projects.js</span>
-                    </a>
-                </li>
-                <li class="tab-menu__item" data-target="panel-logs">
-                    <a href="#" class="tab-menu__link">
-                        <svg class="icon icon--md" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-markdown"></use>
-                        </svg>
-                        <span class="tab-menu__text">logs.md</span>
-                    </a>
-                </li>
-                <li class="tab-menu__item" data-target="panel-contact">
-                    <a href="#" class="tab-menu__link">
-                        <svg class="icon icon--json" aria-hidden="true">
-                            <use href="assets/icons.svg#icon-seti-json"></use>
-                        </svg>
-                        <span class="tab-menu__text">contact.json</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="tab-menu-wrapper">
+            <div class="tab-menu" aria-label="탭 메뉴">
+                <ul class="tab-menu__list" role="tablist">
+                    <li class="tab-menu__item" data-target="panel-welcome" aria-selected="true">
+                        <a href="#" class="tab-menu__link tab-menu__link--active">
+                            <svg class="icon icon--vscode" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-vscode"></use>
+                            </svg>
+                            <span class="tab-menu__text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="tab-menu__item" data-target="panel-about">
+                        <a href="#" class="tab-menu__link">
+                            <svg class="icon icon--html" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-html"></use>
+                            </svg>
+                            <span class="tab-menu__text">about.html</span>
+                        </a>
+                    </li>
+                    <li class="tab-menu__item" data-target="panel-skills">
+                        <a href="#" class="tab-menu__link">
+                            <svg class="icon icon--css" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-css"></use>
+                            </svg>
+                            <span class="tab-menu__text">skills.css</span>
+                        </a>
+                    </li>
+                    <li class="tab-menu__item" data-target="panel-projects">
+                        <a href="#" class="tab-menu__link">
+                            <svg class="icon icon--js" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-javascript"></use>
+                            </svg>
+                            <span class="tab-menu__text">projects.js</span>
+                        </a>
+                    </li>
+                    <li class="tab-menu__item" data-target="panel-logs">
+                        <a href="#" class="tab-menu__link">
+                            <svg class="icon icon--md" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-markdown"></use>
+                            </svg>
+                            <span class="tab-menu__text">logs.md</span>
+                        </a>
+                    </li>
+                    <li class="tab-menu__item" data-target="panel-contact">
+                        <a href="#" class="tab-menu__link">
+                            <svg class="icon icon--json" aria-hidden="true">
+                                <use href="assets/icons.svg#icon-seti-json"></use>
+                            </svg>
+                            <span class="tab-menu__text">contact.json</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-menu-scrollbar">
+                <div class="tab-menu-scrollbar__inner"></div>
+            </div>
         </div>
         <article class="content">
             <section id="panel-welcome" class="content__item content__item--welcome content__item--active">
@@ -264,86 +269,14 @@
                         </li>
                     </ul>
                 </section>
-                <h4 class="welcome-note">&gt; 웹 퍼블리셔 실무 경험을 바탕으로 하여 한 눈에 파악하기 좋은 구성을 만들도록 노력하였습니다.</h4>
+                <h4 class="welcome-note">> 웹 퍼블리셔 실무 경험을 바탕으로 하여 한 눈에 파악하기 좋은 구성을 만들도록 노력하였습니다.</h4>
             </section>
             <section id="panel-about" class="content__item content__item--about" hidden>
                 <div class="code-block">
-                    <div class="line-numbers"></div>
-                    <pre><code class="hljs html">&lt;!DOCTYPE html&gt;
-&lt;html lang="ko"&gt;
-&lt;head&gt;
-    &lt;title&gt;안녕하세요, ✨7년 10개월의 실전 경험을 바탕으로, 문제 해결 중심 퍼블리싱✨을 실천하는 웹 퍼블리셔 ○○○입니다.&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="About me"&gt;
-        2015년부터 2023년까지 다양한 프로젝트에 참여하며 HTML, CSS, 웹표준과 접근성은 물론,
-        유지보수성과 협업 효율을 고려한 퍼블리싱 전략을 체득해왔습니다.
-
-        공백기 동안 일본 취업을 목표로 기술과 언어를 학습했고, 이후 5개월간 일본 현지에서 임베디드 개발자로 일하며
-        개발자 간 커뮤니케이션과 문제 해결 능력을 더 확장했습니다.
-
-        이 때의 경험을 바탕으로 디자인, 사용자 경험, 개발 흐름 사이의 유기적 연결을 만드는 퍼블리셔로 지속적으로 성장하고자 합니다.
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                        </code></pre>
                 </div>
             </section>
             <section id="panel-skills" class="content__item content__item--skills" hidden>
                 <div class="code-block">
-                    <div class="line-numbers"></div>
-                    <pre><code class="hljs css">/*
-    웹 퍼블리셔 ㅇㅇㅇ의 기술 역량
-*/
-
-/* 🎨 Graphics */
-
-.photoshop::before {
-    content: "UI 컴포넌트 분해 및 상세페이지 제작 실무 경험 보유";
-}
-
-.illustrator::before {
-    content: "벡터 아이콘 정리 능력으로 일관된 비주얼 유지 가능";
-}
-
-.figma::before {
-    content: "개인 프로젝트 활용 경험 기반으로 높은 이해도 보유";
-}
-
-
-/* 💻 Coding */
-
-.html::before {
-    content: "&lt;section&gt;, &lt;article&gt; 등 시맨틱 태그로 클린 마크업 구현 가능";
-}
-
-.css::before {
-    content: "SCSS 문법 이해, 스타일 상속 및 변수 활용 능숙";
-}
-
-.jquery::before {
-    content: "슬라이더, 팝업 등 실무 중심 구현 경험 풍부";
-}
-
-.webFont::before {
-    content: "웹폰트 적용 및 최적화 경험 다수";
-}
-
-.fontIcon::before {
-    content: "SVG 기반 벡터를 폰트아이콘으로 활용 가능";
-}
-
-
-/* 🎁 기타 */
-
-.git::before {
-    content: "버전 관리 목적의 Git 활용 경험 有";
-}
-
-.chatGPT::before {
-    content: "GPT API와 Notion 연동하여 뉴스 자동화 수집 시스템 구현";
-}
-                    </code></pre>
                 </div>
             </section>
             <section id="panel-projects" class="content__item content__item--projects" hidden>
@@ -431,5 +364,8 @@
         .then(res => res.text())
         .then(data => document.getElementById('footer').innerHTML = data);
     </script>
+    <script src="js/tabMenu.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/skills.js"></script>
 </body>
 </html>

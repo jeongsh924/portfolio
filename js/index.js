@@ -69,15 +69,4 @@ $(function(){
 
         $('.status-bar__item--language .status-bar__text').text(language);
     });
-
-    $('.code-block').each(function () {
-        var $wrapper = $(this);
-        var codeText = $wrapper.find('code').text();
-        var lines = codeText.split('\n').length;
-        var $lineNumbers = $wrapper.find('.line-numbers');
-
-        for (var i = 1; i <= lines; i++) {
-            $lineNumbers.append('<span>' + i + '</span>');
-        }
-    });
 })
