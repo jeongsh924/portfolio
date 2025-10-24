@@ -164,14 +164,14 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
         gap: 2rem;
         margin-top: 50px;
     }
 
     &__item {
         width: 100%;
-        min-height: 30vw;
+        min-height: 26vw;
     }
 
     &-card {
@@ -227,7 +227,8 @@
             padding-bottom: 7px;
             border-radius: 20px;
             border: 1px solid var(--content-projects-line-color);
-            margin-right: 3px;
+            margin: 3px;
+            margin-left: 0;
 
             &--personal {
                 color: dark.$dark-white;

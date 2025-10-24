@@ -578,13 +578,13 @@ body {
 }
 .projects__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
   gap: 2rem;
   margin-top: 50px;
 }
 .projects__item {
   width: 100%;
-  min-height: 30vw;
+  min-height: 26vw;
 }
 .projects-card {
   border: 1px solid var(--content-projects-line-color);
@@ -632,7 +632,8 @@ body {
   padding-bottom: 7px;
   border-radius: 20px;
   border: 1px solid var(--content-projects-line-color);
-  margin-right: 3px;
+  margin: 3px;
+  margin-left: 0;
 }
 .projects-card__category--personal {
   color: #ffffff;

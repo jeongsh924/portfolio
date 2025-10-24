@@ -4,7 +4,7 @@ $(function () {
     const $scrollInner = $('.tab-menu-scrollbar__inner');
 
     function syncWidth() {
-        const paddingLeft = 20;
+        const paddingLeft = -50;
         const contentWidth = $tabList.get(0).scrollWidth;
         $scrollInner.css('width', contentWidth + paddingLeft + 'px');
     }

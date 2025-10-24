@@ -6,7 +6,7 @@ $(function () {
   var $scrollInner = $('.tab-menu-scrollbar__inner');
 
   function syncWidth() {
-    var paddingLeft = 20;
+    var paddingLeft = -50;
     var contentWidth = $tabList.get(0).scrollWidth;
     $scrollInner.css('width', contentWidth + paddingLeft + 'px');
   } // 초기 동기화 및 리사이즈 대응
