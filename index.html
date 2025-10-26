@@ -13,17 +13,15 @@
     <link rel="stylesheet" href="css/style.css?v0">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs2015.min.css">
 
+    <script src="js/theme.js"></script>
     <script>
         hljs.highlightAll();
     </script>
 </head>
 <body data-theme="dark">
     <div id="header"></div>
-
-    <!-- vs2015 테마 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs2015.min.css">
-
     <main class="main">
         <aside class="icon-menu" aria-label="아이콘 메뉴">
             <nav>
@@ -68,14 +66,14 @@
                 <hr role="separator">
 
                 <ul class="icon-menu__list icon-menu__list--footer">
-                    <li class="icon-menu__item">
+                    <li class="icon-menu__item" data-target="panel-user">
                         <a href="#" class="icon-menu__link" aria-label="user">
                             <svg class="icon icon--menu" aria-hidden="true">
                                 <use href="assets/icons.svg#icon-menu-v2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="icon-menu__item">
+                    <li class="icon-menu__item" data-target="panel-setting">
                         <a href="#" class="icon-menu__link" aria-label="setting">
                             <svg class="icon icon--menu" aria-hidden="true">
                                 <use href="assets/icons.svg#icon-menu-settings-gear"></use>
@@ -280,8 +278,8 @@
                 </div>
             </section>
             <section id="panel-projects" class="content__item content__item--projects" hidden>
+                <h1>참여 프로젝트 목록</h1>
                 <div class="projects">
-                    <h1>참여 프로젝트 목록</h1>
                     <ul class="projects__list">
                         <li class="projects__item">
                             <article class="projects-card">
@@ -432,9 +430,61 @@
                         <span class="line-number">8</span>
                         <span class="code-text">  
                             <span class="hljs-punctuation">}</span>
-                            <span class="hljs-punctuation">,</span>
                         </span>
                     </div>
+                </div>
+            </section>
+
+            <section id="panel-user" class="content__item content__item--user" hidden>
+                <h1># 🎈 User</h1>
+                <h2 class="user-intro">7년 10개월의 경력을 가진 웹 퍼블리셔</h2>
+                <div class="user-content">
+                    <p>한 기업에서 7년 10개월 동안 단독으로 퍼블리싱 및 유지보수를 맡으며, 반복적인 작업을 구조화하고 템플릿화하여 생산성과 품질을 동시에 개선했습니다. 이 과정에서 SCSS와 jQuery 기반의 퍼블리싱 자동화 및 반응형 웹 구축 역량을 키웠습니다.</p>
+                    <p>퍼블리셔로서의 주도성과 실행력은 조직 내에서도 인정받아, 디자인팀과 개발팀 사이에서 기술적 허브 역할을 수행했으며, 실제로 개발팀 편입 제안을 받은 바 있습니다. 이후 일본에서 임베디드 개발을 경험했지만, 정적이고 폐쇄적인 환경보다는 웹 기반 UI 구현과 프론트엔드 개발에서 더 큰 가능성을 느껴 다시금 웹 퍼블리싱에 집중하고 있습니다.</p>
+                    <p>현재는 React 기반 컴포넌트 개발 및 동적 UI 구현에 관심을 가지고 있으며, 단순 퍼블리싱을 넘어 사용자 경험을 향상시키는 UI 퍼블리셔로의 성장을 지향하고 있습니다.</p>
+                </div>
+            </section>
+            <section id="panel-setting" class="content__item content__item--setting" hidden>
+                <h1># ⚙ Setting Themes</h1>
+                <div class="setting">
+                    <ul class="setting__list">
+                        <li class="setting__item">
+                            <article class="setting-card">
+                                <div class="setting-card__thumbnail">
+                                    <img src="assets/icons/Visual_Studio_Code.svg" alt="visual studio dark theme">
+                                </div>
+                                <div class="setting-card__info">
+                                    <h3 class="setting-card__title">Vscode Default</h3>
+                                    <p class="setting-card__desc">Visual studio dark theme</p>
+                                    <button class="setting-card__btn" data-theme="dark">set theme</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="setting__item">
+                            <article class="setting-card">
+                                <div class="setting-card__thumbnail">
+                                    <img src="assets/icons/vscode-alt.svg" alt="visual studio light theme">
+                                </div>
+                                <div class="setting-card__info">
+                                    <h3 class="setting-card__title">Vscode Light</h3>
+                                    <p class="setting-card__desc">Visual studio light theme</p>
+                                    <button class="setting-card__btn" data-theme="light">set theme</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="setting__item">
+                            <article class="setting-card">
+                                <div class="setting-card__thumbnail">
+                                    <img src="assets/icons/sublime-text.svg" alt="sublime text theme">
+                                </div>
+                                <div class="setting-card__info">
+                                    <h3 class="setting-card__title">Sublime Text</h3>
+                                    <p class="setting-card__desc">Sublime text default theme</p>
+                                    <button class="setting-card__btn" data-theme="sublime-dark">set theme</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </article>

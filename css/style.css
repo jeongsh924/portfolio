@@ -49,6 +49,57 @@
   --footer-remote-bg-color-hover: #329071;
 }
 
+[data-theme=light] {
+  --header-bg-color: #dddddd;
+  --menu-bar-color: #333333;
+  --menu-bar-color-hover: #333333;
+  --menu-bar-bg: transparent;
+  --menu-bar-bg-hover: #d2d2d2;
+  --header-title-color: #ffffff;
+  --window-controls-color: #333333;
+  --window-controls-color-hover: #c0c0c0;
+  --window-controls-close-color-hover: #ffffff;
+  --window-controls-close-bg-hover: #e81123;
+  --main-bg-color: #ffffff;
+  --icon-menu-bg-color: #f8f8f8;
+  --icon-menu-color: #616161;
+  --icon-menu-color-hover: #1f1f1f;
+  --explorer-menu-bg-color: #f3f3f3;
+  --explorer-menu-color: #616161;
+  --explorer-menu-color-bg: transparent;
+  --explorer-menu-color-bg-line: transparent;
+  --explorer-menu-more-bg-hover: #e1e1e1;
+  --explorer-menu-color-bg-hover: #e8e8e8;
+  --explorer-menu-color-bg-active: #e4e6f1;
+  --explorer-menu-color-click: #ffffff;
+  --explorer-menu-color-bg-click: #0060c0;
+  --explorer-menu-color-bg-line-click: #90c2f9;
+  --tab-menu-bg-color: #f3f3f3;
+  --tab-menu-item-bg-color: #ececec;
+  --tab-menu-item-line-color: #f3f3f3;
+  --tab-menu-color: #6a6a6a;
+  --tab-menu-color-active: #707070;
+  --tab-menu-item-bg-active: #ffffff;
+  --content-bg-color: #ffffff;
+  --content-default-color: #000000;
+  --content-welcome-title-color: #616161;
+  --content-welcome-intro-color: #717171;
+  --content-welcome-color: #616161;
+  --content-welcome-point-color: #3794ff;
+  --content-welcome-note-color: #cccccc;
+  --content-line-numbers-color: #237893;
+  --content-projects-line-color: #3a3a3a;
+  --content-projects-line-shadow-color: #2e2e2e;
+  --content-projects-title-color: #3a3a3a;
+  --content-js-doctype-highlight-color: #bd63c5;
+  --footer-bg-color: #007acc;
+  --footer-color: #f7f9fd;
+  --footer-item-bg-hover: #1e84c8;
+  --footer-remote-color: #ffffff;
+  --footer-remote-bg-color: #16825d;
+  --footer-remote-bg-color-hover: #329071;
+}
+
 :root {
   --header-height: 35px;
   --icon-menu-width: 48px;
@@ -579,9 +630,10 @@ body {
   padding-left: 15px;
 }
 
-.projects h1 {
+.content__item--projects h1 {
   font-size: 24px;
 }
+
 .projects__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
@@ -683,6 +735,98 @@ body {
   padding-left: 30px;
 }
 
+.content__item--user {
+  margin-top: 50px;
+  padding: 0 var(--content-padding);
+}
+.content__item--user h1 {
+  color: var(--content-welcome-title-color);
+  font-size: 35px;
+}
+.content__item--user .user-intro {
+  color: var(--content-welcome-intro-color);
+  font-size: 18px;
+  margin-top: 10px;
+  padding-right: var(--content-padding);
+}
+.content__item--user .user-content {
+  margin-top: 35px;
+  padding-right: var(--content-padding);
+  max-width: 780px;
+}
+.content__item--user .user-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.content__item--setting h1 {
+  font-size: 24px;
+}
+
+.setting__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 2rem;
+  margin-top: 150px;
+}
+.setting__item {
+  width: 100%;
+  min-height: 26vw;
+}
+.setting-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+}
+.setting-card__thumbnail {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282829;
+}
+.setting-card__thumbnail img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.setting-card__info {
+  color: var(--content-default-color);
+}
+.setting-card__title {
+  color: var(--content-projects-title-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.setting-card__desc {
+  margin-top: 10px;
+}
+.setting-card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none;
+  background-color: #007acc;
+  color: #ffffff;
+  cursor: pointer;
+}
+.setting-card__btn:hover {
+  text-decoration: underline;
+}
+
 .footer {
   width: 100%;
   height: var(--footer-height);
@@ -770,5 +914,18 @@ body {
   .main .content__item .code-block code {
     white-space: pre-wrap;
     word-break: break-word;
+  }
+  .main .content__item--user {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects__list {
+    grid-template-columns: auto;
+  }
+
+  .setting__list {
+    grid-template-columns: auto;
+    margin-top: 50px;
   }
 }

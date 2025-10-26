@@ -1,0 +1,64 @@
+@use '../abstract/palette' as palette;
+@use '../tokens/tokens.light' as light;
+@forward '../tokens/tokens.light' as light-*;
+
+[data-theme="light"] {
+    --header-bg-color: #{light.$header-bg-color};
+    --menu-bar-color: #{light.$menu-bar-color};
+    --menu-bar-color-hover: #{light.$menu-bar-color-hover};
+    --menu-bar-bg: #{light.$menu-bar-bg};
+    --menu-bar-bg-hover: #{light.$menu-bar-bg-hover};
+    --header-title-color: #{light.$header-title-color};
+    --window-controls-color: #{light.$window-controls-color};
+    --window-controls-color-hover: #{light.$window-controls-color-hover};
+    --window-controls-close-color-hover: #{light.$window-controls-close-color-hover};
+    --window-controls-close-bg-hover: #{light.$window-controls-close-bg-hover};
+
+    --main-bg-color: #{light.$main-bg-color};
+    
+    --icon-menu-bg-color: #{light.$icon-menu-bg-color};
+    --icon-menu-color: #{light.$icon-menu-color};
+    --icon-menu-color-hover: #{light.$icon-menu-color-hover};
+    
+    --explorer-menu-bg-color: #{light.$explorer-menu-bg-color};
+    --explorer-menu-color: #{light.$explorer-menu-color};
+    --explorer-menu-color-bg: #{light.$explorer-menu-color-bg};
+    --explorer-menu-color-bg-line: #{light.$explorer-menu-color-bg-line};
+    --explorer-menu-more-bg-hover: #{light.$explorer-menu-more-bg-hover};
+    --explorer-menu-color-bg-hover: #{light.$explorer-menu-color-bg-hover};
+    --explorer-menu-color-bg-active: #{light.$explorer-menu-color-bg-active};
+    --explorer-menu-color-click: #{light.$explorer-menu-color-click};
+    --explorer-menu-color-bg-click: #{light.$explorer-menu-color-bg-click};
+    --explorer-menu-color-bg-line-click: #{light.$explorer-menu-color-bg-line-click};
+    
+    --tab-menu-bg-color: #{light.$tab-menu-bg-color};
+    --tab-menu-item-bg-color: #{light.$tab-menu-item-bg-color};
+    --tab-menu-item-line-color: #{light.$explorer-menu-bg-color};
+    --tab-menu-color: #{light.$tab-menu-color};
+    --tab-menu-color-active: #{light.$tab-menu-color-active};
+    --tab-menu-item-bg-active: #{light.$content-bg-color};
+
+    --content-bg-color: #{light.$content-bg-color};
+    --content-default-color: #{light.$content-default-color};
+
+    --content-welcome-title-color: #{light.$content-welcome-color};
+    --content-welcome-intro-color: #{light.$content-welcome-intro-color};
+    --content-welcome-color: #{light.$content-welcome-color};
+    --content-welcome-point-color: #{light.$blue-450};
+    --content-welcome-note-color: #{light.$gray-200};
+
+    --content-line-numbers-color: #{light.$content-line-numbers-color};
+    
+    --content-projects-line-color: #{light.$content-projects-line-color};
+    --content-projects-line-shadow-color: #{light.$content-projects-line-shadow-color};
+    --content-projects-title-color: #{light.$content-projects-title-color};
+    --content-js-doctype-highlight-color: #{light.$content-js-doctype-highlight-color};
+
+
+    --footer-bg-color: #{light.$footer-bg-color};
+    --footer-color: #{light.$footer-color};
+    --footer-item-bg-hover: #{light.$footer-item-bg-hover};
+    --footer-remote-color: #{light.$footer-remote-color};
+    --footer-remote-bg-color: #{light.$footer-remote-bg-color};
+    --footer-remote-bg-color-hover: #{light.$footer-remote-bg-color-hover};
+}

@@ -6,7 +6,7 @@ $(function () {
         "github": "https://github.com/jeongsh924",
         "notion": "https://www.notion.so/298a67e9ff3a805ebc46cd934d1389c9",
     }
-  },`;
+  }`;
 
     const aboutHighlighted = hljs.highlight(logsCode, { language: 'json' }).value;
     const $codeBlock = $('#panel-contact .code-block');

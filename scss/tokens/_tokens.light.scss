@@ -1,0 +1,63 @@
+@import "../abstract/palette";
+
+
+//header
+$header-bg-color: #dddddd;
+
+$menu-bar-color: #333333;
+$menu-bar-color-hover: #333333;
+$menu-bar-bg: transparent;
+$menu-bar-bg-hover: #d2d2d2;
+
+$header-title-color: $white;
+
+$window-controls-color: #333333;
+$window-controls-color-hover: #c0c0c0;
+$window-controls-close-color-hover: $white;
+$window-controls-close-bg-hover: $red-500;
+
+
+//main
+$main-bg-color: $white;
+
+$icon-menu-bg-color: #f8f8f8;
+$icon-menu-color: #616161;
+$icon-menu-color-hover: #1f1f1f;
+
+$explorer-menu-bg-color: #f3f3f3;
+$explorer-menu-color: #616161;
+$explorer-menu-color-bg: transparent;
+$explorer-menu-color-bg-line: transparent;
+$explorer-menu-more-bg-hover: #e1e1e1;
+$explorer-menu-color-bg-hover: #e8e8e8;
+$explorer-menu-color-bg-active: #e4e6f1;
+$explorer-menu-color-click: $white;
+$explorer-menu-color-bg-click: #0060c0;
+$explorer-menu-color-bg-line-click: #90c2f9;
+
+$tab-menu-bg-color: #f3f3f3;
+$tab-menu-item-bg-color: #ececec;
+$tab-menu-color: #6a6a6a;
+$tab-menu-color-active: #707070;
+
+$content-bg-color: $white;
+
+$content-welcome-color: #616161;
+$content-welcome-intro-color: #717171;
+$content-default-color: #000000;
+$content-line-numbers-color: #237893;
+$content-projects-line-color: #3a3a3a;
+$content-projects-line-shadow-color: #2e2e2e;
+$content-projects-title-color: $gray-700;
+$content-js-doctype-highlight-color: #bd63c5;
+
+$point-color: #007acc;
+
+$footer-bg-color: $point-color;
+$footer-color: #f7f9fd;
+$footer-item-bg-hover: #1e84c8;
+$footer-remote-color: $white;
+$footer-remote-bg-color: $green-500;
+$footer-remote-bg-color-hover: #329071;
+
+
