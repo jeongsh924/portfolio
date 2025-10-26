@@ -22,10 +22,8 @@ $(function () {
 - Notion API + ChatGPT 기반 뉴스 수집 자동화 시스템 개발
 
 ## 총평
-- “퍼블리셔”를 넘어 코드와 구조, 협업에 관심을 가졌고,
-- 반복되는 작업을 어떻게 더 효율화할 수 있을지를 고민하며 성장.
-- **비개발자였지만 개발자의 시야를 익혀온 퍼블리셔**라는 정체성을 가짐.
-`;
+- “퍼블리셔”를 넘어 코드와 구조, 협업에 관심을 가짐.
+- 반복되는 작업을 어떻게 더 효율화할 수 있을지를 고민하며 성장.`;
 
     const aboutHighlighted = hljs.highlight(logsCode, { language: 'markdown' }).value;
     const $codeBlock = $('#panel-logs .code-block');

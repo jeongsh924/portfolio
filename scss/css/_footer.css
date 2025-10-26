@@ -1,47 +1,52 @@
 [data-theme=dark] {
-  --header-bg-color: oklch(0.3562 0 0);
-  --menu-bar-color: oklch(0.8328 0 0);
-  --menu-bar-color-hover: oklch(0.8452 0 0);
+  --header-bg-color: #3c3c3c;
+  --menu-bar-color: #c8c8c8;
+  --menu-bar-color-hover: #cccccc;
   --menu-bar-bg: transparent;
-  --menu-bar-bg-hover: oklch(0.3932 0.0013 197.1);
-  --header-title-color: oklch(1 0 0);
-  --window-controls-color: oklch(0.8452 0 0);
-  --window-controls-color-hover: oklch(0.4532 0 0);
-  --window-controls-close-color-hover: oklch(1 0 0);
-  --window-controls-close-bg-hover: oklch(0.5899 0.2344 26.3);
-  --main-bg-color: oklch(0.2649 0.0018 286.27);
-  --icon-menu-bg-color: oklch(0.3211 0 0);
-  --icon-menu-color: oklch(0.6167 0 0);
-  --icon-menu-color-hover: oklch(1 0 0);
-  --explorer-menu-bg-color: oklch(0.2649 0.0018 286.27);
-  --explorer-menu-color: oklch(0.8452 0 0);
+  --menu-bar-bg-hover: #454646;
+  --header-title-color: #ffffff;
+  --window-controls-color: #cccccc;
+  --window-controls-color-hover: #565656;
+  --window-controls-close-color-hover: #ffffff;
+  --window-controls-close-bg-hover: #e81123;
+  --main-bg-color: #252526;
+  --icon-menu-bg-color: #333333;
+  --icon-menu-color: #858585;
+  --icon-menu-color-hover: #ffffff;
+  --explorer-menu-bg-color: #252526;
+  --explorer-menu-color: #cccccc;
   --explorer-menu-color-bg: transparent;
   --explorer-menu-color-bg-line: transparent;
-  --explorer-menu-more-bg-hover: oklch(0.3358 0.0014 197.09);
-  --explorer-menu-color-bg-hover: oklch(0.2946 0.0046 219.63);
-  --explorer-menu-color-bg-active: oklch(0.3391 0.0104 285.83);
-  --explorer-menu-color-click: oklch(1 0 0);
-  --explorer-menu-color-bg-click: oklch(0.334 0.0827 246.12);
-  --explorer-menu-color-bg-line-click: oklch(0.5836 0.159068 248.5119);
-  --tab-menu-bg-color: oklch(0.2649 0.0018 286.27);
-  --tab-menu-item-bg-color: oklch(0.2972 0 0);
-  --tab-menu-item-line-color: oklch(0.2649 0.0018 286.27);
-  --tab-menu-color: oklch(0.5486 0 0);
-  --tab-menu-color-active: oklch(1 0 0);
-  --tab-menu-item-bg-active: oklch(0.235 0 0);
-  --content-bg-color: oklch(0.235 0 0);
-  --content-default-color: oklch(0.8699 0 0);
-  --content-welcome-title-color: oklch(0.8452 0 0);
-  --content-welcome-intro-color: oklch(0.6797 0 0);
-  --content-welcome-color: oklch(0.7219 0 0);
-  --content-welcome-point-color: oklch(0.6657 0.1806 254.62);
-  --content-welcome-note-color: oklch(0.4532 0 0);
-  --footer-bg-color: oklch(0.567 0.154556 248.5156);
-  --footer-color: oklch(0.9817 0.0057 264.53);
-  --footer-item-bg-active: oklch(0.5913 0.1359 244.32);
-  --footer-remote-color: oklch(1 0 0);
-  --footer-remote-bg-color: oklch(0.5398 0.1091 163.81);
-  --footer-remote-bg-color-hover: oklch(0.5895 0.1005 167.52);
+  --explorer-menu-more-bg-hover: #363737;
+  --explorer-menu-color-bg-hover: #2a2d2e;
+  --explorer-menu-color-bg-active: #37373d;
+  --explorer-menu-color-click: #ffffff;
+  --explorer-menu-color-bg-click: #04395e;
+  --explorer-menu-color-bg-line-click: #007fd4;
+  --tab-menu-bg-color: #252526;
+  --tab-menu-item-bg-color: #2d2d2d;
+  --tab-menu-item-line-color: #252526;
+  --tab-menu-color: #717171;
+  --tab-menu-color-active: #ffffff;
+  --tab-menu-item-bg-active: #1e1e1e;
+  --content-bg-color: #1e1e1e;
+  --content-default-color: #d4d4d4;
+  --content-welcome-title-color: #cccccc;
+  --content-welcome-intro-color: #989898;
+  --content-welcome-color: #a5a5a5;
+  --content-welcome-point-color: #3794ff;
+  --content-welcome-note-color: #565656;
+  --content-line-numbers-color: #858585;
+  --content-projects-line-color: #3a3a3a;
+  --content-projects-line-shadow-color: #2e2e2e;
+  --content-projects-title-color: #ffffff;
+  --content-js-doctype-highlight-color: #bd63c5;
+  --footer-bg-color: #007acc;
+  --footer-color: #f7f9fd;
+  --footer-item-bg-hover: #1e84c8;
+  --footer-remote-color: #ffffff;
+  --footer-remote-bg-color: #16825d;
+  --footer-remote-bg-color-hover: #329071;
 }
 
 .footer {
@@ -87,4 +92,10 @@
 }
 .footer .status-bar__item--remote:hover {
   background-color: var(--footer-remote-bg-color-hover);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 10px;
+  }
 }

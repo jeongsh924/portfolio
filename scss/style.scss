@@ -116,6 +116,7 @@
 
         .code-text {
             flex: 1;
+            word-break: break-all;
         }
 
         code {
@@ -271,6 +272,23 @@
 .content__item--contact {
     a {
         color: #d69d85;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    $code-line-padding: 15px;
+    .code-line {
+        &2, &3, &4, &7 {
+            .code-text {
+                padding-left: $code-line-padding * 1;
+            }
+        }
+        &5, &6 {
+            .code-text {
+                padding-left: $code-line-padding * 2;
+            }
+        }
     }
 }
 

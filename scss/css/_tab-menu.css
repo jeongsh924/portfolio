@@ -56,7 +56,7 @@
   position: fixed;
   top: var(--header-height);
   left: calc(var(--icon-menu-width) + var(--explorer-menu-width));
-  width: 100%;
+  width: calc(100% - calc(var(--icon-menu-width) + var(--explorer-menu-width)));
 }
 .tab-menu-scrollbar {
   display: none;
