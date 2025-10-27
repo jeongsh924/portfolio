@@ -1,6 +1,6 @@
 $(function () {
     const logsCode = `{
-    "name": "ㅇㅇㅇ",
+    "name": "정송희",
     "email": "jeong.sh924@gmail.com",
     "social": {
         "github": "https://github.com/jeongsh924",

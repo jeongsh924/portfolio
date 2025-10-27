@@ -1,7 +1,7 @@
 "use strict";
 
 $(function () {
-  var logsCode = "{\n    \"name\": \"\u3147\u3147\u3147\",\n    \"email\": \"jeong.sh924@gmail.com\",\n    \"social\": {\n        \"github\": \"https://github.com/jeongsh924\",\n        \"notion\": \"https://www.notion.so/298a67e9ff3a805ebc46cd934d1389c9\",\n    }\n  }";
+  var logsCode = "{\n    \"name\": \"\uC815\uC1A1\uD76C\",\n    \"email\": \"jeong.sh924@gmail.com\",\n    \"social\": {\n        \"github\": \"https://github.com/jeongsh924\",\n        \"notion\": \"https://www.notion.so/298a67e9ff3a805ebc46cd934d1389c9\",\n    }\n  }";
   var aboutHighlighted = hljs.highlight(logsCode, {
     language: 'json'
   }).value;

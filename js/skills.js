@@ -1,5 +1,5 @@
 $(function(){
-    const skillsCode = `/* 웹 퍼블리셔 ㅇㅇㅇ의 기술 역량 */
+    const skillsCode = `/* 웹 퍼블리셔 정송희의 기술 역량 */
 
     /* 🎨 Graphics */
 
