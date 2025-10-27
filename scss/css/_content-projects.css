@@ -1,0 +1,100 @@
+.content__item--projects h1 {
+  font-size: 24px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 2rem;
+  margin-top: 50px;
+}
+.projects__item {
+  width: 100%;
+  min-height: 26vw;
+}
+.projects-card {
+  border: 1px solid var(--content-projects-line-color);
+  border-radius: 20px;
+  box-shadow: 0 0 0 0 var(--content-projects-line-shadow-color);
+  transition: box-shadow 0.3s;
+}
+.projects-card__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.projects-card__thumbnail {
+  width: 100%;
+  height: 15vw;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.projects-card__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-card__info {
+  color: var(--content-default-color);
+}
+.projects-card__title {
+  color: var(--content-projects-title-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.projects-card__desc {
+  margin-top: 10px;
+}
+.projects-card__tags {
+  margin-top: 10px;
+}
+.projects-card__category {
+  display: inline-flex;
+  padding: 5px 10px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  border: 1px solid var(--content-projects-line-color);
+  margin: 3px;
+  margin-left: 0;
+}
+.projects-card__category--personal {
+  color: #ffffff;
+  border-color: var(--content-projects-personal-color);
+  background-color: var(--content-projects-personal-color);
+}
+.projects-card__category--company {
+  color: #ffffff;
+  border-color: var(--content-projects-company-color);
+  background-color: var(--content-projects-company-color);
+}
+.projects-card__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  border: 3px solid var(--content-projects-more-line-color);
+  border-radius: 30px;
+}
+.projects-card:hover {
+  box-shadow: 0 0 0 10px var(--content-projects-line-shadow-color);
+}
+.projects-card:hover .projects-card__more {
+  border: none;
+  padding: calc(10px + 3px);
+  color: #ffffff;
+  background: linear-gradient(to right in oklch, var(--content-projects-more-gradient-start-color), var(--content-projects-more-gradient-end-color));
+}
+
+@media screen and (max-width: 768px) {
+  .projects__list {
+    grid-template-columns: auto;
+  }
+  .projects-card__thumbnail {
+    height: 40vw;
+  }
+}

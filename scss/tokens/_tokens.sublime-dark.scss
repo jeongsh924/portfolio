@@ -1,0 +1,73 @@
+@forward "../abstract/palette";
+@use "../abstract/palette" as *;
+
+$point-color: #528bff;
+
+//header
+$header-bg-color: #21252b;
+
+$menu-bar-color: #9da5b4;
+$menu-bar-color-hover: #9da5b4;
+$menu-bar-bg: transparent;
+$menu-bar-bg-hover: #33373b;
+
+$header-title-color: #9da5b4;
+
+$window-controls-color: #9da5b4;
+$window-controls-color-hover: #3f4247;
+$window-controls-close-color-hover: $white;
+$window-controls-close-bg-hover: $red-500;
+
+
+//main
+$main-bg-color: #282c34;
+
+$icon-menu-bg-color: #333842;
+$icon-menu-color: #757982;
+$icon-menu-color-hover: #d7dae0;
+$icon-menu-color-active-line: #d7dae0;
+
+$explorer-menu-bg-color: #21252b;
+$explorer-menu-color: #cccccc;
+$explorer-menu-color-bg: transparent;
+$explorer-menu-color-bg-line: transparent;
+$explorer-menu-more-bg-hover: #33373b;
+$explorer-menu-color-bg-hover: #262a31;
+$explorer-menu-color-bg-active: #2c313a;
+$explorer-menu-color-click: #d7dae0;
+$explorer-menu-color-bg-click: #2c313a;
+$explorer-menu-color-bg-line-click: #528bff;
+
+$tab-menu-bg-color: #21252b;
+$tab-menu-item-bg-color: #21252b;
+$tab-menu-color: #7c7f85;
+$tab-menu-color-active: #d7dae0;
+$tab-menu-scrollbar: #171a1e;
+
+$content-bg-color: #282c34;
+$content-highlight-color: #3e4451;
+
+$content-welcome-color: #cccccc;
+$content-welcome-intro-color: #9b9c9e;
+$content-welcome-link-color: #358bf9;
+$content-default-color: #a3aab6;
+$content-line-numbers-color: #636d83;
+$content-projects-line-color: #343944;
+$content-projects-line-shadow-color: #30353e;
+$content-projects-title-color: $white;
+$content-projects-personal-color: #4762ff;
+$content-projects-company-color: #ff47ff;
+$content-projects-more-line-color: #383e49;
+$content-projects-more-gradient-start-color: #4970ff;
+$content-projects-more-gradient-end-color: #e048ff;
+$content-contact-link-color: #98c379;
+$content-setting-thumbnail-color: #20232b;
+$content-setting-button-color: $white;
+$content-setting-button-bg-color: #007acc;
+
+$footer-bg-color: #21252b;
+$footer-color: #9da5b4;
+$footer-item-bg-hover: #2a2f37;
+$footer-remote-color: $white;
+$footer-remote-bg-color: $point-color;
+$footer-remote-bg-color-hover: #2c313a;

@@ -1,0 +1,9 @@
+.content__item--about .code-line4 .code-text {
+  padding-left: 15px;
+}
+.content__item--about .code-line7 .code-text, .content__item--about .code-line15 .code-text {
+  padding-left: 15px;
+}
+.content__item--about .code-line8 .code-text, .content__item--about .code-line9 .code-text, .content__item--about .code-line10 .code-text, .content__item--about .code-line11 .code-text, .content__item--about .code-line12 .code-text, .content__item--about .code-line13 .code-text, .content__item--about .code-line14 .code-text {
+  padding-left: 30px;
+}

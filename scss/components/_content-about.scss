@@ -1,0 +1,25 @@
+// content - about
+
+.content__item--about {
+    $code-line-padding: 15px;
+
+    .code-line {
+        &4 {
+            .code-text {
+                padding-left: $code-line-padding * 1;
+            }
+        }
+
+        &7, &15 {
+            .code-text {
+                padding-left: $code-line-padding * 1;
+            }
+        }
+
+        &8, &9, &10, &11, &12, &13, &14 {
+            .code-text {
+                padding-left: $code-line-padding * 2;
+            }
+        }
+    }
+}

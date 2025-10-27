@@ -1,0 +1,64 @@
+// content - welcome
+
+.content__item--welcome {
+    margin-top: 50px;
+    padding: 0 var(--content-padding);
+
+    h1 {
+        color: var(--content-welcome-title-color);
+        font-size: 35px;
+    }
+
+    .welcome-intro {
+        color: var(--content-welcome-intro-color);
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .welcome-group {
+        margin-top: 35px;
+
+        &__title {
+            color: var(--content-welcome-title-color);
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        
+        &__item {
+            width: 100%;
+        }
+
+        &__link {
+            display: inline-flex;
+            align-items: center;
+            margin: 6px 0;
+            color: var(--content-welcome-link-color);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .welcome-note {
+        color: var(--content-welcome-note-color);
+        margin-top: 50px;
+    }
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .content__item--welcome {
+        margin-top: 0;
+
+        .welcome-note {
+            margin-top: 20px;
+        }
+    }
+}

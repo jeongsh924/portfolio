@@ -13,12 +13,9 @@
     <link rel="stylesheet" href="css/style.css?v0">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs2015.min.css">
+    <link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs2015.min.css">
 
     <script src="js/theme.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
 </head>
 <body data-theme="dark">
     <div id="header"></div>
@@ -405,7 +402,7 @@
                         <span class="code-text">    
                             <span class="hljs-attr">"github"</span>
                             <span class="hljs-punctuation">:</span> 
-                            <span class="hljs-string"><a href="https://github.com/jeongsh924" target="_blank">"https://github.com/jeongsh924"</a></span>
+                            <span class="hljs-string">"<a href="https://github.com/jeongsh924" target="_blank">https://github.com/jeongsh924</a>"</span>
                             <span class="hljs-punctuation">,</span>
                         </span>
                     </div>
@@ -415,7 +412,7 @@
                         <span class="code-text">    
                             <span class="hljs-attr">"notion"</span>
                             <span class="hljs-punctuation">:</span> 
-                            <span class="hljs-string"><a href="https://www.notion.so/298a67e9ff3a80f3bccaca5df8744226" target="_blank">"ㅇㅇㅇ의 워크스페이스"</a></span>
+                            <span class="hljs-string">"<a href="https://www.notion.so/298a67e9ff3a80f3bccaca5df8744226" target="_blank">ㅇㅇㅇ의 워크스페이스</a>"</span>
                         </span>
                     </div>
                 
@@ -492,19 +489,10 @@
 
     <div id="footer"></div>
 
-    <script>
-        fetch('header.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('header').innerHTML = data);
-
-        fetch('footer.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <script src="js/init.js"></script>
     <script src="js/tabMenu.js"></script>
     <script src="js/about.js"></script>
     <script src="js/skills.js"></script>
     <script src="js/logs.js"></script>
-    <!-- <script src="js/contact.js"></script> -->
 </body>
 </html>

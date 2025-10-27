@@ -10,7 +10,7 @@ $(function () {
       dataTheme: 'light'
     },
     'sublime-dark': {
-      hljs: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/monokai.min.css',
+      hljs: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css',
       dataTheme: 'sublime-dark'
     }
   };

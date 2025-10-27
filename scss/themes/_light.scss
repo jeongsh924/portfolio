@@ -1,6 +1,4 @@
-@use '../abstract/palette' as palette;
 @use '../tokens/tokens.light' as light;
-@forward '../tokens/tokens.light' as light-*;
 
 [data-theme="light"] {
     --header-bg-color: #{light.$header-bg-color};
@@ -19,6 +17,7 @@
     --icon-menu-bg-color: #{light.$icon-menu-bg-color};
     --icon-menu-color: #{light.$icon-menu-color};
     --icon-menu-color-hover: #{light.$icon-menu-color-hover};
+    --icon-menu-color-active-line: #{light.$icon-menu-color-active-line};
     
     --explorer-menu-bg-color: #{light.$explorer-menu-bg-color};
     --explorer-menu-color: #{light.$explorer-menu-color};
@@ -37,24 +36,36 @@
     --tab-menu-color: #{light.$tab-menu-color};
     --tab-menu-color-active: #{light.$tab-menu-color-active};
     --tab-menu-item-bg-active: #{light.$content-bg-color};
+    --tab-menu-scrollbar: #{light.$tab-menu-scrollbar};
 
     --content-bg-color: #{light.$content-bg-color};
     --content-default-color: #{light.$content-default-color};
+    --content-highlight-color: #{light.$content-highlight-color};
 
-    --content-welcome-title-color: #{light.$content-welcome-color};
+    --content-welcome-title-color: #{light.$gray-200};
     --content-welcome-intro-color: #{light.$content-welcome-intro-color};
     --content-welcome-color: #{light.$content-welcome-color};
-    --content-welcome-point-color: #{light.$blue-450};
-    --content-welcome-note-color: #{light.$gray-200};
+    --content-welcome-link-color: #{light.$content-welcome-link-color};
+    --content-welcome-note-color: #{light.$gray-600};
 
     --content-line-numbers-color: #{light.$content-line-numbers-color};
     
     --content-projects-line-color: #{light.$content-projects-line-color};
     --content-projects-line-shadow-color: #{light.$content-projects-line-shadow-color};
     --content-projects-title-color: #{light.$content-projects-title-color};
-    --content-js-doctype-highlight-color: #{light.$content-js-doctype-highlight-color};
+    --content-projects-personal-color: #{light.$content-projects-personal-color};
+    --content-projects-company-color: #{light.$content-projects-company-color};
+    --content-projects-more-line-color: #{light.$content-projects-more-line-color};
+    --content-projects-more-gradient-start-color: #{light.$content-projects-more-gradient-start-color};
+    --content-projects-more-gradient-end-color: #{light.$content-projects-more-gradient-end-color};
 
+    --content-contact-link-color: #{light.$content-contact-link-color};
 
+    --content-setting-thumbnail-color: #{light.$content-setting-thumbnail-color};
+    --content-setting-button-color: #{light.$content-setting-button-color};
+    --content-setting-button-bg-color: #{light.$content-setting-button-bg-color};
+
+    
     --footer-bg-color: #{light.$footer-bg-color};
     --footer-color: #{light.$footer-color};
     --footer-item-bg-hover: #{light.$footer-item-bg-hover};

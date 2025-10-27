@@ -1,6 +1,4 @@
-@use '../abstract/palette' as palette;
 @use '../tokens/tokens.dark' as dark;
-@forward '../tokens/tokens.dark' as dark-*;
 
 [data-theme="dark"] {
     --header-bg-color: #{dark.$header-bg-color};
@@ -19,6 +17,7 @@
     --icon-menu-bg-color: #{dark.$icon-menu-bg-color};
     --icon-menu-color: #{dark.$icon-menu-color};
     --icon-menu-color-hover: #{dark.$icon-menu-color-hover};
+    --icon-menu-color-active-line: #{dark.$icon-menu-color-active-line};
     
     --explorer-menu-bg-color: #{dark.$explorer-menu-bg-color};
     --explorer-menu-color: #{dark.$explorer-menu-color};
@@ -37,14 +36,16 @@
     --tab-menu-color: #{dark.$tab-menu-color};
     --tab-menu-color-active: #{dark.$tab-menu-color-active};
     --tab-menu-item-bg-active: #{dark.$content-bg-color};
+    --tab-menu-scrollbar: #{dark.$tab-menu-scrollbar};
 
     --content-bg-color: #{dark.$content-bg-color};
     --content-default-color: #{dark.$content-default-color};
+    --content-highlight-color: #{dark.$content-highlight-color};
 
     --content-welcome-title-color: #{dark.$gray-200};
     --content-welcome-intro-color: #{dark.$content-welcome-intro-color};
     --content-welcome-color: #{dark.$content-welcome-color};
-    --content-welcome-point-color: #{dark.$blue-450};
+    --content-welcome-link-color: #{dark.$content-welcome-link-color};
     --content-welcome-note-color: #{dark.$gray-600};
 
     --content-line-numbers-color: #{dark.$content-line-numbers-color};
@@ -52,9 +53,19 @@
     --content-projects-line-color: #{dark.$content-projects-line-color};
     --content-projects-line-shadow-color: #{dark.$content-projects-line-shadow-color};
     --content-projects-title-color: #{dark.$content-projects-title-color};
-    --content-js-doctype-highlight-color: #{dark.$content-js-doctype-highlight-color};
+    --content-projects-personal-color: #{dark.$content-projects-personal-color};
+    --content-projects-company-color: #{dark.$content-projects-company-color};
+    --content-projects-more-line-color: #{dark.$content-projects-more-line-color};
+    --content-projects-more-gradient-start-color: #{dark.$content-projects-more-gradient-start-color};
+    --content-projects-more-gradient-end-color: #{dark.$content-projects-more-gradient-end-color};
 
+    --content-contact-link-color: #{dark.$content-contact-link-color};
 
+    --content-setting-thumbnail-color: #{dark.$content-setting-thumbnail-color};
+    --content-setting-button-color: #{dark.$content-setting-button-color};
+    --content-setting-button-bg-color: #{dark.$content-setting-button-bg-color};
+
+    
     --footer-bg-color: #{dark.$footer-bg-color};
     --footer-color: #{dark.$footer-color};
     --footer-item-bg-hover: #{dark.$footer-item-bg-hover};

@@ -17,8 +17,12 @@
         align-items: center;
 
         &__list {
-            display: block;
+            display: flex;
             height: var(--footer-height);
+
+            &--right {
+                margin-right: 8px;
+            }
         }
 
         &__item {
@@ -26,8 +30,13 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            padding: 0 2px;
+            padding: 0 4px;
+            margin: 0 4px;
             cursor: pointer;
+
+            &:hover {
+                background-color: var(--footer-item-bg-hover);
+            }
 
             .icon {
                 width: 14px;
@@ -39,6 +48,7 @@
                 background-color: var(--footer-remote-bg-color);
                 min-width: 34px;
                 padding: 0;
+                margin: 0;
 
                 .icon {
                     color: var(--footer-remote-color);
@@ -48,6 +58,17 @@
                     background-color: var(--footer-remote-bg-color-hover);
                 }
             }
+        }
+
+        &__text {
+            margin: 0 4px;
+            margin-bottom: 2px;
+        }
+
+        &__problems {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

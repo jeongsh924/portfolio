@@ -1,0 +1,75 @@
+@use '../tokens/tokens.sublime-dark' as sublime-dark;
+
+[data-theme="sublime-dark"] {
+    --header-bg-color: #{sublime-dark.$header-bg-color};
+    --menu-bar-color: #{sublime-dark.$menu-bar-color};
+    --menu-bar-color-hover: #{sublime-dark.$menu-bar-color-hover};
+    --menu-bar-bg: #{sublime-dark.$menu-bar-bg};
+    --menu-bar-bg-hover: #{sublime-dark.$menu-bar-bg-hover};
+    --header-title-color: #{sublime-dark.$header-title-color};
+    --window-controls-color: #{sublime-dark.$window-controls-color};
+    --window-controls-color-hover: #{sublime-dark.$window-controls-color-hover};
+    --window-controls-close-color-hover: #{sublime-dark.$window-controls-close-color-hover};
+    --window-controls-close-bg-hover: #{sublime-dark.$window-controls-close-bg-hover};
+
+    --main-bg-color: #{sublime-dark.$main-bg-color};
+    
+    --icon-menu-bg-color: #{sublime-dark.$icon-menu-bg-color};
+    --icon-menu-color: #{sublime-dark.$icon-menu-color};
+    --icon-menu-color-hover: #{sublime-dark.$icon-menu-color-hover};
+    --icon-menu-color-active-line: #{sublime-dark.$icon-menu-color-active-line};
+    
+    --explorer-menu-bg-color: #{sublime-dark.$explorer-menu-bg-color};
+    --explorer-menu-color: #{sublime-dark.$explorer-menu-color};
+    --explorer-menu-color-bg: #{sublime-dark.$explorer-menu-color-bg};
+    --explorer-menu-color-bg-line: #{sublime-dark.$explorer-menu-color-bg-line};
+    --explorer-menu-more-bg-hover: #{sublime-dark.$explorer-menu-more-bg-hover};
+    --explorer-menu-color-bg-hover: #{sublime-dark.$explorer-menu-color-bg-hover};
+    --explorer-menu-color-bg-active: #{sublime-dark.$explorer-menu-color-bg-active};
+    --explorer-menu-color-click: #{sublime-dark.$explorer-menu-color-click};
+    --explorer-menu-color-bg-click: #{sublime-dark.$explorer-menu-color-bg-click};
+    --explorer-menu-color-bg-line-click: #{sublime-dark.$explorer-menu-color-bg-line-click};
+    
+    --tab-menu-bg-color: #{sublime-dark.$tab-menu-bg-color};
+    --tab-menu-item-bg-color: #{sublime-dark.$tab-menu-item-bg-color};
+    --tab-menu-item-line-color: #{sublime-dark.$explorer-menu-bg-color};
+    --tab-menu-color: #{sublime-dark.$tab-menu-color};
+    --tab-menu-color-active: #{sublime-dark.$tab-menu-color-active};
+    --tab-menu-item-bg-active: #{sublime-dark.$content-bg-color};
+    --tab-menu-scrollbar: #{sublime-dark.$tab-menu-scrollbar};
+
+    --content-bg-color: #{sublime-dark.$content-bg-color};
+    --content-default-color: #{sublime-dark.$content-default-color};
+    --content-highlight-color: #{sublime-dark.$content-highlight-color};
+
+    --content-welcome-title-color: #{sublime-dark.$gray-200};
+    --content-welcome-intro-color: #{sublime-dark.$content-welcome-intro-color};
+    --content-welcome-color: #{sublime-dark.$content-welcome-color};
+    --content-welcome-link-color: #{sublime-dark.$content-welcome-link-color};
+    --content-welcome-note-color: #{sublime-dark.$gray-600};
+
+    --content-line-numbers-color: #{sublime-dark.$content-line-numbers-color};
+    
+    --content-projects-line-color: #{sublime-dark.$content-projects-line-color};
+    --content-projects-line-shadow-color: #{sublime-dark.$content-projects-line-shadow-color};
+    --content-projects-title-color: #{sublime-dark.$content-projects-title-color};
+    --content-projects-personal-color: #{sublime-dark.$content-projects-personal-color};
+    --content-projects-company-color: #{sublime-dark.$content-projects-company-color};
+    --content-projects-more-line-color: #{sublime-dark.$content-projects-more-line-color};
+    --content-projects-more-gradient-start-color: #{sublime-dark.$content-projects-more-gradient-start-color};
+    --content-projects-more-gradient-end-color: #{sublime-dark.$content-projects-more-gradient-end-color};
+
+    --content-contact-link-color: #{sublime-dark.$content-contact-link-color};
+
+    --content-setting-thumbnail-color: #{sublime-dark.$content-setting-thumbnail-color};
+    --content-setting-button-color: #{sublime-dark.$content-setting-button-color};
+    --content-setting-button-bg-color: #{sublime-dark.$content-setting-button-bg-color};
+
+    
+    --footer-bg-color: #{sublime-dark.$footer-bg-color};
+    --footer-color: #{sublime-dark.$footer-color};
+    --footer-item-bg-hover: #{sublime-dark.$footer-item-bg-hover};
+    --footer-remote-color: #{sublime-dark.$footer-remote-color};
+    --footer-remote-bg-color: #{sublime-dark.$footer-remote-bg-color};
+    --footer-remote-bg-color-hover: #{sublime-dark.$footer-remote-bg-color-hover};
+}

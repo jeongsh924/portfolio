@@ -1,0 +1,27 @@
+// content - contact
+
+.content__item--contact {
+    $code-line-padding: 15px;
+
+    a {
+        color: var(--content-contact-link-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .code-line {
+        &2, &3, &4, &7 {
+            .code-text {
+                padding-left: $code-line-padding * 1;
+            }
+        }
+
+        &5, &6 {
+            .code-text {
+                padding-left: $code-line-padding * 2;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
-@import "../abstract/palette";
+@forward "../abstract/palette";
+@use "../abstract/palette" as *;
 
+$point-color: #007acc;
 
 //header
 $header-bg-color: #dddddd;
@@ -9,7 +11,7 @@ $menu-bar-color-hover: #333333;
 $menu-bar-bg: transparent;
 $menu-bar-bg-hover: #d2d2d2;
 
-$header-title-color: $white;
+$header-title-color: #1e1e1e;
 
 $window-controls-color: #333333;
 $window-controls-color-hover: #c0c0c0;
@@ -23,6 +25,7 @@ $main-bg-color: $white;
 $icon-menu-bg-color: #f8f8f8;
 $icon-menu-color: #616161;
 $icon-menu-color-hover: #1f1f1f;
+$icon-menu-color-active-line: #005fb8;
 
 $explorer-menu-bg-color: #f3f3f3;
 $explorer-menu-color: #616161;
@@ -39,19 +42,28 @@ $tab-menu-bg-color: #f3f3f3;
 $tab-menu-item-bg-color: #ececec;
 $tab-menu-color: #6a6a6a;
 $tab-menu-color-active: #707070;
+$tab-menu-scrollbar: $gray-200;
 
 $content-bg-color: $white;
+$content-highlight-color: #add6ff;
 
 $content-welcome-color: #616161;
 $content-welcome-intro-color: #717171;
+$content-welcome-link-color: #006ab1;
 $content-default-color: #000000;
 $content-line-numbers-color: #237893;
-$content-projects-line-color: #3a3a3a;
-$content-projects-line-shadow-color: #2e2e2e;
+$content-projects-line-color: $gray-200;
+$content-projects-line-shadow-color: $gray-50;
 $content-projects-title-color: $gray-700;
-$content-js-doctype-highlight-color: #bd63c5;
-
-$point-color: #007acc;
+$content-projects-personal-color: #006eff;
+$content-projects-company-color: #bc00ff;
+$content-projects-more-line-color: $gray-100;
+$content-projects-more-gradient-start-color: #0083ff;
+$content-projects-more-gradient-end-color: #9100ff;
+$content-contact-link-color: #a31515;
+$content-setting-thumbnail-color: $gray-50;
+$content-setting-button-color: $white;
+$content-setting-button-bg-color: $point-color;
 
 $footer-bg-color: $point-color;
 $footer-color: #f7f9fd;
@@ -59,5 +71,3 @@ $footer-item-bg-hover: #1e84c8;
 $footer-remote-color: $white;
 $footer-remote-bg-color: $green-500;
 $footer-remote-bg-color-hover: #329071;
-
-

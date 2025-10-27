@@ -13,6 +13,7 @@
   --icon-menu-bg-color: #333333;
   --icon-menu-color: #858585;
   --icon-menu-color-hover: #ffffff;
+  --icon-menu-color-active-line: #ffffff;
   --explorer-menu-bg-color: #252526;
   --explorer-menu-color: #cccccc;
   --explorer-menu-color-bg: transparent;
@@ -29,18 +30,28 @@
   --tab-menu-color: #717171;
   --tab-menu-color-active: #ffffff;
   --tab-menu-item-bg-active: #1e1e1e;
+  --tab-menu-scrollbar: #000000;
   --content-bg-color: #1e1e1e;
   --content-default-color: #d4d4d4;
+  --content-highlight-color: #264f78;
   --content-welcome-title-color: #cccccc;
   --content-welcome-intro-color: #989898;
   --content-welcome-color: #a5a5a5;
-  --content-welcome-point-color: #3794ff;
+  --content-welcome-link-color: #3794ff;
   --content-welcome-note-color: #565656;
   --content-line-numbers-color: #858585;
   --content-projects-line-color: #3a3a3a;
   --content-projects-line-shadow-color: #2e2e2e;
   --content-projects-title-color: #ffffff;
-  --content-js-doctype-highlight-color: #bd63c5;
+  --content-projects-personal-color: #004299;
+  --content-projects-company-color: #710099;
+  --content-projects-more-line-color: #3a3a3a;
+  --content-projects-more-gradient-start-color: #0069cc;
+  --content-projects-more-gradient-end-color: #7400cc;
+  --content-contact-link-color: #d69d85;
+  --content-setting-thumbnail-color: #282829;
+  --content-setting-button-color: #ffffff;
+  --content-setting-button-bg-color: #007acc;
   --footer-bg-color: #007acc;
   --footer-color: #f7f9fd;
   --footer-item-bg-hover: #1e84c8;
@@ -49,70 +60,76 @@
   --footer-remote-bg-color-hover: #329071;
 }
 
-.footer {
+.content__item--setting h1 {
+  font-size: 24px;
+}
+
+.setting__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 2rem;
+  margin-top: 150px;
+}
+.setting__item {
   width: 100%;
-  height: var(--footer-height);
-  background-color: var(--footer-bg-color);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  color: var(--footer-color);
-  font-size: 12px;
+  min-height: 26vw;
 }
-.footer .status-bar {
+.setting-card {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
 }
-.footer .status-bar__list {
+.setting-card__thumbnail {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
   display: flex;
-  height: var(--footer-height);
-}
-.footer .status-bar__list--right {
-  margin-right: 8px;
-}
-.footer .status-bar__item {
-  display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding: 0 4px;
-  margin: 0 4px;
+  background-color: var(--content-setting-thumbnail-color);
+}
+.setting-card__thumbnail img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.setting-card__info {
+  color: var(--content-default-color);
+}
+.setting-card__title {
+  color: var(--content-projects-title-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.setting-card__desc {
+  margin-top: 10px;
+}
+.setting-card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none;
+  background-color: var(--content-setting-button-bg-color);
+  color: var(--content-setting-button-color);
   cursor: pointer;
 }
-.footer .status-bar__item:hover {
-  background-color: var(--footer-item-bg-hover);
-}
-.footer .status-bar__item .icon {
-  width: 14px;
-  height: 14px;
-  color: var(--footer-color);
-}
-.footer .status-bar__item--remote {
-  background-color: var(--footer-remote-bg-color);
-  min-width: 34px;
-  padding: 0;
-  margin: 0;
-}
-.footer .status-bar__item--remote .icon {
-  color: var(--footer-remote-color);
-}
-.footer .status-bar__item--remote:hover {
-  background-color: var(--footer-remote-bg-color-hover);
-}
-.footer .status-bar__text {
-  margin: 0 4px;
-  margin-bottom: 2px;
-}
-.footer .status-bar__problems {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.setting-card__btn:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    font-size: 10px;
+  .setting__list {
+    grid-template-columns: auto;
+    margin-top: 50px;
   }
 }

@@ -1,0 +1,12 @@
+.content__item--contact a {
+  color: var(--content-contact-link-color);
+}
+.content__item--contact a:hover {
+  text-decoration: underline;
+}
+.content__item--contact .code-line2 .code-text, .content__item--contact .code-line3 .code-text, .content__item--contact .code-line4 .code-text, .content__item--contact .code-line7 .code-text {
+  padding-left: 15px;
+}
+.content__item--contact .code-line5 .code-text, .content__item--contact .code-line6 .code-text {
+  padding-left: 30px;
+}

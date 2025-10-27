@@ -1,0 +1,13 @@
+// content - skills
+
+.content__item--skills {
+    $code-line-padding: 15px;
+
+    .code-line {
+        &6, &10, &14, &21, &25, &29, &33, &37, &44, &48 {
+            .code-text {
+                padding-left: $code-line-padding * 1;
+            }
+        }
+    }
+}
