@@ -1,10 +1,10 @@
 $(function () {
     const logsCode = `{
-    "name": "정송희",
-    "email": "jeong.sh924@gmail.com",
+    "name": "000",
+    "email": "000@mail.com",
     "social": {
-        "github": "https://github.com/jeongsh924",
-        "notion": "https://www.notion.so/298a67e9ff3a805ebc46cd934d1389c9",
+        "github": "000",
+        "notion": "000",
     }
   }`;
 
