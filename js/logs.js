@@ -19,7 +19,12 @@ $(function () {
 
 ## 2023~2024 : 자동화 및 도전
 - 일본 임베디드 개발자로 취직 성공
-- Notion API + ChatGPT 기반 뉴스 수집 자동화 시스템 개발`;
+- Notion API + ChatGPT 기반 뉴스 수집 자동화 시스템 개발
+
+## 2025~2026 : AI 협업 및 프로세스 자동화
+- 공장형 웹에이전시 환경 내에서 수많은 웹사이트 신규 작업을 진행하며 생산성 및 스킬셋 극대화
+- 커서, 클로드 지원 환경에서 프로젝트 맞춤형 .mdc 규칙 설계
+- 퍼블리싱 빌드 속도와 마크업 품질 개선`;
 
     const aboutHighlighted = hljs.highlight(logsCode, { language: 'markdown' }).value;
     const $codeBlock = $('#panel-logs .code-block');
