@@ -4,7 +4,7 @@ $(function () {
     "email": "jeong.sh924@gmail.com",
     "social": {
         "github": "https://github.com/jeongsh924",
-        "notion": "https://www.notion.so/298a67e9ff3a805ebc46cd934d1389c9",
+        "notion": "https://vagabond-action-10e.notion.site/298a67e9ff3a80f3bccaca5df8744226",
     }
   }`;
 

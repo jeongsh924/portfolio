@@ -52,7 +52,7 @@ $(function(){
     .cursor::before {
         content: "프로젝트별 Custom MDC 규칙 설계를 통한 마크업 및 CSS 빌드 자동화 생산성 극대화";
     }
-
+    
 `;
 
     const skillsHighlighted = hljs.highlight(skillsCode, { language: 'css' }).value;
