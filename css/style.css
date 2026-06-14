@@ -675,11 +675,11 @@ body {
 .content__item--about .code-line7 .code-text, .content__item--about .code-line15 .code-text {
   padding-left: 15px;
 }
-.content__item--about .code-line8 .code-text, .content__item--about .code-line9 .code-text, .content__item--about .code-line10 .code-text, .content__item--about .code-line11 .code-text, .content__item--about .code-line12 .code-text, .content__item--about .code-line13 .code-text, .content__item--about .code-line14 .code-text {
+.content__item--about .code-line8 .code-text, .content__item--about .code-line9 .code-text, .content__item--about .code-line10 .code-text, .content__item--about .code-line11 .code-text, .content__item--about .code-line12 .code-text, .content__item--about .code-line13 .code-text, .content__item--about .code-line14 .code-text,  .content__item--about .code-line16 .code-text, .content__item--about .code-line17 .code-text, .content__item--about .code-line18 .code-text, .content__item--about .code-line20 .code-text, .content__item--about .code-line21 .code-text {
   padding-left: 30px;
 }
 
-.content__item--skills .code-line6 .code-text, .content__item--skills .code-line10 .code-text, .content__item--skills .code-line14 .code-text, .content__item--skills .code-line21 .code-text, .content__item--skills .code-line25 .code-text, .content__item--skills .code-line29 .code-text, .content__item--skills .code-line33 .code-text, .content__item--skills .code-line37 .code-text, .content__item--skills .code-line44 .code-text, .content__item--skills .code-line48 .code-text {
+.content__item--skills .code-line6 .code-text, .content__item--skills .code-line10 .code-text, .content__item--skills .code-line14 .code-text, .content__item--skills .code-line21 .code-text, .content__item--skills .code-line25 .code-text, .content__item--skills .code-line29 .code-text, .content__item--skills .code-line33 .code-text, .content__item--skills .code-line37 .code-text, .content__item--skills .code-line44 .code-text, .content__item--skills .code-line48 .code-text, .code-line52 .code-text {
   padding-left: 15px;
 }
 
