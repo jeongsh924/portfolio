@@ -2,7 +2,7 @@ $(function () {
     const aboutCode = `<!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>안녕하세요, ✨8년 5개월의 실전 경험을 바탕으로, 문제 해결 중심 퍼블리싱✨을 실천하는 웹 퍼블리셔 정송희입니다.</title>
+    <title>안녕하세요, ✨8년 6개월의 실전 경험을 바탕으로, 문제 해결 중심 퍼블리싱✨을 실천하는 웹 퍼블리셔 정송희입니다.</title>
 </head>
 <body>
     <div class="About me">
